@@ -9,7 +9,6 @@ const QUICK_LINKS = [
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/faq", label: "FAQ" },
-  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact Us" },
 ];
 
