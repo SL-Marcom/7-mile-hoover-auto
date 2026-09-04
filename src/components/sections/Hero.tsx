@@ -1,7 +1,8 @@
+import Image from "next/image";
 import { CTA } from "@/components/ui/CTA";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { PhoneIcon, MapPinIcon, ClockIcon, CheckIcon } from "@/components/icons";
+import { PhoneIcon, CheckIcon } from "@/components/icons";
 import { business } from "@/content/business";
 
 const QUICK_SERVICES = ["Brakes", "Engine", "Transmission", "Diagnostics", "Suspension", "AC & Heating"];
@@ -9,7 +10,7 @@ const QUICK_SERVICES = ["Brakes", "Engine", "Transmission", "Diagnostics", "Susp
 export function Hero() {
   return (
     <Section className="bg-white">
-      <Container className="grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:py-20">
+      <Container className="grid gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:items-stretch lg:py-20">
         <div className="space-y-6">
           <p className="inline-flex items-center gap-2 rounded-md bg-[var(--color-surface)] px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-[var(--color-primary)]">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-primary)]" />
@@ -44,36 +45,16 @@ export function Hero() {
           </ul>
         </div>
 
-        <aside className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7">
-          <p className="font-display text-sm font-bold uppercase tracking-wide text-[var(--color-ink)]">Visit or Call Us</p>
-          <div className="mt-5 space-y-4 text-sm">
-            <div className="flex items-start gap-3">
-              <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-              <div>
-                <p className="font-semibold text-[var(--color-ink)]">{business.address.full}</p>
-                <a href={business.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)] underline underline-offset-2">
-                  Get Directions
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <ClockIcon className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-              <div className="text-[var(--color-ink)]">
-                {business.hours.value.map((entry) => (
-                  <p key={entry.days}>
-                    <span className="font-semibold">{entry.days}:</span> {entry.time}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-              <a href={business.phone.href} className="font-semibold text-[var(--color-ink)] hover:text-[var(--color-primary)]">
-                {business.phone.display}
-              </a>
-            </div>
-          </div>
-        </aside>
+        <div className="relative h-64 w-full overflow-hidden rounded-lg sm:h-80 lg:h-auto lg:min-h-[420px]">
+          <Image
+            src="/images/hero-shop-exterior.jpg"
+            alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
       </Container>
     </Section>
   );
