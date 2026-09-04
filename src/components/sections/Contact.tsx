@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
 import { Input, Label, Textarea } from "@/components/ui/Form";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { business } from "@/content/business";
 
 interface ContactProps {
   title: string;
@@ -11,22 +11,34 @@ interface ContactProps {
 
 export function Contact({ title, description }: ContactProps) {
   return (
-    <Section id="contact" className="bg-slate-50 py-16 sm:py-20">
+    <Section id="contact" className="bg-white py-14 sm:py-18">
       <Container className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Contact</p>
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-950">{title}</h2>
-          <p className="text-lg text-slate-600">{description}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--color-primary)]">Get in Touch</p>
+          <h2 className="text-3xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-4xl">{title}</h2>
+          <p className="text-lg leading-7 text-[var(--color-muted)]">{description}</p>
         </div>
-        <Card variant="elevated" className="space-y-4">
-          <Label htmlFor="contact-name">Name</Label>
-          <Input id="contact-name" placeholder="Your name" />
-          <Label htmlFor="contact-email">Email</Label>
-          <Input id="contact-email" type="email" placeholder="you@example.com" />
-          <Label htmlFor="contact-message">Message</Label>
-          <Textarea id="contact-message" placeholder="Tell us about your project" />
-          <Button type="button">Send message</Button>
-        </Card>
+
+        <div className="space-y-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7">
+          <div>
+            <Label htmlFor="contact-name">Name</Label>
+            <Input id="contact-name" name="name" placeholder="Your name" autoComplete="name" />
+          </div>
+          <div>
+            <Label htmlFor="contact-email">Email</Label>
+            <Input id="contact-email" name="email" type="email" placeholder="you@example.com" autoComplete="email" />
+          </div>
+          <div>
+            <Label htmlFor="contact-message">What&rsquo;s going on with your vehicle?</Label>
+            <Textarea id="contact-message" name="message" placeholder="Tell us about your vehicle and what you're noticing" />
+          </div>
+          <Button type="button" fullWidth>
+            Request a Free Quote
+          </Button>
+          <p className="text-xs text-[var(--color-muted)]">
+            This form isn&rsquo;t connected yet. For now, please call {business.phone.display} to reach us directly.
+          </p>
+        </div>
       </Container>
     </Section>
   );

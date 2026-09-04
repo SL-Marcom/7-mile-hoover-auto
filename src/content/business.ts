@@ -123,6 +123,22 @@ export const business = {
         "The vehicle pulling to one side when braking",
         "A brake warning light on the dashboard",
       ],
+      whyTimelyMatters:
+        "Brakes are a safety system, and small issues rarely stay small. A worn pad left too long can damage rotors, and a soft pedal can mean reduced stopping power when you need it most. Addressing brake issues early usually means a simpler, less expensive repair.",
+      faqs: [
+        {
+          question: "How do I know if my brakes need attention?",
+          answer: "Watch for squealing or grinding noises, a soft or low pedal, vibration when braking, or the vehicle pulling to one side. Any of these is worth having checked.",
+        },
+        {
+          question: "Do you work on both front and rear brakes?",
+          answer: "Yes, we inspect and service the full brake system, including pads, rotors, calipers, and related hardware.",
+        },
+        {
+          question: "Can I still drive if my brakes are squealing?",
+          answer: "A squeal alone doesn't always mean an emergency, but it's a sign of wear that should be inspected soon before it turns into a grinding noise or reduced stopping power.",
+        },
+      ],
       relatedSlugs: ["suspension-repair", "wheel-alignment", "check-engine-light-diagnostics"],
     },
     {
@@ -147,6 +163,22 @@ export const business = {
         "A strong exhaust or burning smell inside or outside the vehicle",
         "Visible rust, holes, or hanging components under the vehicle",
         "Reduced fuel economy",
+      ],
+      whyTimelyMatters:
+        "An exhaust leak doesn't just mean extra noise — it can let exhaust fumes travel toward the cabin and puts added strain on related components. Rust and small leaks also tend to spread, so a repair that's manageable today can become a full section replacement later.",
+      faqs: [
+        {
+          question: "Why is my car suddenly louder than usual?",
+          answer: "A sudden increase in noise usually points to a leak, hole, or loose section somewhere in the exhaust system. We inspect the full path to find where it's coming from.",
+        },
+        {
+          question: "Do you repair exhaust leaks or only replace parts?",
+          answer: "Both — depending on where the damage is and its condition, we repair or replace the affected section.",
+        },
+        {
+          question: "Is a rattling sound from underneath always the exhaust?",
+          answer: "Not always, but a loose exhaust hanger or bracket is a common cause. We inspect the full system to confirm.",
+        },
       ],
       relatedSlugs: ["engine-repair", "check-engine-light-diagnostics", "general-auto-repair"],
     },
@@ -173,6 +205,22 @@ export const business = {
         "Visible fluid leaks under the vehicle",
         "A check engine or oil pressure warning light",
       ],
+      whyTimelyMatters:
+        "Engine issues often start as a small symptom, like a hesitation or a minor leak, before developing into a larger repair. Diagnosing the cause early can help avoid more extensive engine damage and a bigger repair bill.",
+      faqs: [
+        {
+          question: "My check engine light is on but the car drives fine — do I need to worry?",
+          answer: "A steady check engine light with no other symptoms is still worth scanning. A flashing light means you should limit driving and have it looked at as soon as possible.",
+        },
+        {
+          question: "What's the difference between engine repair and diagnostics?",
+          answer: "Diagnostics identifies the cause of the issue. Engine repair is the actual work — belts, gaskets, leaks, or other components — once we know what's wrong.",
+        },
+        {
+          question: "Do you work on both older and newer vehicles?",
+          answer: "Yes, we repair gasoline engines across a wide range of everyday cars, trucks, and SUVs.",
+        },
+      ],
       relatedSlugs: ["check-engine-light-diagnostics", "oil-change-preventive-maintenance", "radiator-cooling-system-repair"],
     },
     {
@@ -197,6 +245,22 @@ export const business = {
         "Grinding or shaking during shifts",
         "Transmission fluid leaks (often red or brown)",
         "A burning smell from the transmission",
+      ],
+      whyTimelyMatters:
+        "Transmission problems tend to get more expensive the longer they're ignored. A hesitation or rough shift caught early is often a simpler repair than the drivability and internal damage that can follow.",
+      faqs: [
+        {
+          question: "What does it mean if my car slips out of gear?",
+          answer: "Slipping can point to several transmission issues, from fluid problems to internal wear. We diagnose the cause before recommending a repair.",
+        },
+        {
+          question: "Do you work on manual transmissions?",
+          answer: "Yes, we service and repair common issues on both automatic and manual transmissions.",
+        },
+        {
+          question: "Is a transmission fluid leak serious?",
+          answer: "It can be. Low fluid affects shifting and can lead to further damage, so it's worth having a leak inspected promptly.",
+        },
       ],
       relatedSlugs: ["engine-repair", "check-engine-light-diagnostics", "general-auto-repair"],
     },
@@ -223,6 +287,22 @@ export const business = {
         "You recently bought the vehicle and don't know its service history",
         "You've noticed a general decline in how the vehicle runs",
       ],
+      whyTimelyMatters:
+        "Routine maintenance is the most effective way to catch small issues before they become expensive repairs. Staying on a consistent service schedule also helps your vehicle run more reliably day to day.",
+      faqs: [
+        {
+          question: "How often should I get an oil change?",
+          answer: "It depends on your vehicle and driving habits. We follow manufacturer-recommended intervals rather than a one-size-fits-all schedule — ask us what's right for your vehicle.",
+        },
+        {
+          question: "What's included in a multi-point inspection?",
+          answer: "We check fluid levels, belts, hoses, and other key components so you know about developing issues early.",
+        },
+        {
+          question: "I don't know my vehicle's service history — can you help?",
+          answer: "Yes, we can do a general inspection to get a clearer picture of where your vehicle stands and what maintenance may be due.",
+        },
+      ],
       relatedSlugs: ["engine-repair", "check-engine-light-diagnostics", "radiator-cooling-system-repair"],
     },
     {
@@ -247,6 +327,22 @@ export const business = {
         "Blown fuses that repeat",
         "Power windows, locks, or accessories that stop working",
         "A burning smell or visible damage to wiring",
+      ],
+      whyTimelyMatters:
+        "Electrical issues can be intermittent and easy to put off, but they often point to an underlying problem that affects other systems. Diagnosing the actual cause early helps avoid repeat failures and more involved repairs.",
+      faqs: [
+        {
+          question: "My interior lights are dim — is that an electrical issue?",
+          answer: "It can be, often related to the battery, charging system, or a wiring issue. We test the system to find the actual cause.",
+        },
+        {
+          question: "Why do my fuses keep blowing?",
+          answer: "Repeated blown fuses usually mean something is drawing too much current somewhere in the circuit. We trace the issue rather than just replacing the fuse.",
+        },
+        {
+          question: "Do you diagnose intermittent electrical problems?",
+          answer: "Yes, though intermittent issues can take a bit more time to isolate. We test methodically rather than guessing.",
+        },
       ],
       relatedSlugs: ["starter-alternator-repair", "check-engine-light-diagnostics", "general-auto-repair"],
     },
@@ -273,6 +369,22 @@ export const business = {
         "The vehicle recently failed or is due for an emissions check",
         "Any other dashboard warning light you're unsure about",
       ],
+      whyTimelyMatters:
+        "A check engine light can range from a minor sensor issue to something that affects drivability or emissions. Getting it scanned early means you're making an informed decision instead of guessing at the cause.",
+      faqs: [
+        {
+          question: "Does a check engine light always mean something serious?",
+          answer: "Not always, but it always means something needs attention. We scan for diagnostic codes and inspect related systems to find the actual cause.",
+        },
+        {
+          question: "Can you tell me what the code means before doing any repair?",
+          answer: "Yes, we explain what we find in plain language and what we'd recommend before starting any work.",
+        },
+        {
+          question: "My light is flashing — what should I do?",
+          answer: "A flashing check engine light usually means a more urgent issue. It's best to limit driving and have it looked at as soon as possible.",
+        },
+      ],
       relatedSlugs: ["engine-repair", "auto-electrical-repair", "general-auto-repair"],
     },
     {
@@ -297,6 +409,22 @@ export const business = {
         "The vehicle pulling or leaning to one side",
         "Uneven tire wear",
         "Nose-diving when braking",
+      ],
+      whyTimelyMatters:
+        "Worn suspension components don't just affect comfort — they change how your vehicle handles and can accelerate uneven tire wear. Addressing it early helps protect your tires and keep handling predictable.",
+      faqs: [
+        {
+          question: "How do I know if it's my suspension and not something else?",
+          answer: "Common signs include a bouncy or unstable ride, clunking over bumps, or the vehicle leaning to one side. We inspect the full suspension system to confirm the cause.",
+        },
+        {
+          question: "Can bad suspension affect my tires?",
+          answer: "Yes, worn suspension components are a common cause of uneven tire wear.",
+        },
+        {
+          question: "Do you check suspension during other services?",
+          answer: "We can — a suspension inspection is often paired with related services like alignment or steering work.",
+        },
       ],
       relatedSlugs: ["steering-repair", "wheel-alignment", "brake-repair"],
     },
@@ -323,6 +451,22 @@ export const business = {
         "Steering wheel vibration",
         "Fluid leaking near the front wheels",
       ],
+      whyTimelyMatters:
+        "Steering issues affect how easily and predictably you can control your vehicle. Loose or worn steering components tend to get worse gradually, so an early inspection can prevent a bigger repair or a less predictable ride.",
+      faqs: [
+        {
+          question: "Why does my steering feel loose?",
+          answer: "Looseness is often related to worn steering linkage, tie rod ends, or related components. We inspect the system to find the cause.",
+        },
+        {
+          question: "Is a whining noise when turning always power steering?",
+          answer: "It's a common cause, often related to fluid level or the power steering pump, but we inspect to confirm before recommending a repair.",
+        },
+        {
+          question: "Should I get my steering checked along with an alignment?",
+          answer: "It's a good idea. Steering and suspension issues can affect alignment, so we'll flag anything relevant if we find it.",
+        },
+      ],
       relatedSlugs: ["suspension-repair", "wheel-alignment", "brake-repair"],
     },
     {
@@ -345,6 +489,22 @@ export const business = {
         "The steering wheel is off-center when driving straight",
         "Uneven or rapid tire wear",
         "You recently hit a pothole, curb, or had suspension work done",
+      ],
+      whyTimelyMatters:
+        "Driving with your wheels out of alignment leads to faster, uneven tire wear and can make the vehicle harder to keep straight. Catching it early protects your tires and keeps handling consistent.",
+      faqs: [
+        {
+          question: "How do I know if I need an alignment?",
+          answer: "Common signs are the vehicle pulling to one side, an off-center steering wheel while driving straight, or uneven tire wear.",
+        },
+        {
+          question: "I hit a pothole — should I get an alignment checked?",
+          answer: "Yes, hitting a pothole or curb is a common cause of alignment issues, even if nothing looks visibly wrong.",
+        },
+        {
+          question: "Does an alignment fix uneven tire wear that's already happened?",
+          answer: "Alignment corrects the cause going forward, but tire wear that's already occurred won't reverse. Getting it checked sooner helps limit further wear.",
+        },
       ],
       relatedSlugs: ["suspension-repair", "steering-repair", "brake-repair"],
     },
@@ -371,6 +531,22 @@ export const business = {
         "Low coolant level with no clear cause",
         "The engine overheating"
       ],
+      whyTimelyMatters:
+        "An overheating engine can cause serious, expensive damage in a short amount of time. Catching a coolant leak or failing component early is one of the most effective ways to protect the engine.",
+      faqs: [
+        {
+          question: "My temperature gauge is reading higher than normal — is that urgent?",
+          answer: "It's worth having inspected promptly. Driving with an overheating engine can lead to serious damage.",
+        },
+        {
+          question: "What causes a coolant leak?",
+          answer: "Leaks can come from the radiator, hoses, water pump, or other cooling system components. We inspect the full system to find the source.",
+        },
+        {
+          question: "How often should the cooling system be serviced?",
+          answer: "It depends on your vehicle and coolant type. We can check your cooling system as part of a general inspection and let you know what's due.",
+        },
+      ],
       relatedSlugs: ["engine-repair", "ac-heating-repair", "general-auto-repair"],
     },
     {
@@ -395,6 +571,22 @@ export const business = {
         "Heat not working or blowing cold",
         "Unusual smells or noises from the vents",
         "Foggy or slow-clearing windows",
+      ],
+      whyTimelyMatters:
+        "AC and heating issues might seem like a comfort concern rather than a mechanical one, but they can point to a refrigerant leak, electrical issue, or blower problem worth addressing before the underlying cause gets worse.",
+      faqs: [
+        {
+          question: "Why is my AC blowing warm air?",
+          answer: "This can point to several issues, including a refrigerant leak or a problem with the AC system's components. We diagnose the actual cause before recommending a repair.",
+        },
+        {
+          question: "My heat isn't working — could that be related to my cooling system?",
+          answer: "It can be — the heating system shares components with the engine's cooling system, so we check both when needed.",
+        },
+        {
+          question: "Do you service both AC and heating?",
+          answer: "Yes, we diagnose and repair both systems, from weak airflow to a system that isn't heating or cooling at all.",
+        },
       ],
       relatedSlugs: ["radiator-cooling-system-repair", "auto-electrical-repair", "general-auto-repair"],
     },
@@ -421,6 +613,22 @@ export const business = {
         "Dimming headlights or interior lights",
         "The battery repeatedly dies even when it's been replaced",
       ],
+      whyTimelyMatters:
+        "A failing starter or charging system tends to get worse gradually until the vehicle won't start at all, often at an inconvenient time. Testing the actual cause early helps you avoid being stranded.",
+      faqs: [
+        {
+          question: "My car won't start — is that always the battery?",
+          answer: "Not always. A clicking sound or slow cranking can point to the starter or charging system rather than the battery itself. We test each component to confirm.",
+        },
+        {
+          question: "My battery keeps dying even after I replaced it — what's going on?",
+          answer: "That's a common sign of a charging system issue, such as a failing alternator, rather than the battery. We test the full system to find the cause.",
+        },
+        {
+          question: "What does dimming headlights usually mean?",
+          answer: "It can point to a charging system issue. We test the alternator and related components to confirm.",
+        },
+      ],
       relatedSlugs: ["auto-electrical-repair", "check-engine-light-diagnostics", "general-auto-repair"],
     },
     {
@@ -444,6 +652,22 @@ export const business = {
         "You want a general inspection before a long trip",
         "You're due for routine maintenance",
         "You want a second opinion on a repair recommendation",
+      ],
+      whyTimelyMatters:
+        "When something feels off but doesn't point to one obvious system, waiting can let a minor issue develop into something more involved. A general inspection helps identify the actual cause early, whatever it turns out to be.",
+      faqs: [
+        {
+          question: "What if I don't know what's wrong with my vehicle?",
+          answer: "That's alright — describe what you're noticing and we'll do a general inspection to help identify the cause.",
+        },
+        {
+          question: "Do you offer general inspections before a road trip?",
+          answer: "Yes, a pre-trip inspection is a good way to catch potential issues before they become a problem on the road.",
+        },
+        {
+          question: "What happens after the inspection?",
+          answer: "We'll explain what we find and point you to the right specific service if something needs attention.",
+        },
       ],
       relatedSlugs: ["oil-change-preventive-maintenance", "check-engine-light-diagnostics", "engine-repair"],
     },

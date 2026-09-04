@@ -198,6 +198,17 @@ export function ChevronRightIcon(props: IconProps) {
   return base(<path d="M9 5.5 15.5 12 9 18.5" />, props);
 }
 
+export function ImageIcon(props: IconProps) {
+  return base(
+    <>
+      <rect x="3" y="4" width="18" height="16" rx="2" />
+      <circle cx="8.5" cy="9.5" r="1.5" />
+      <path d="M21 16.5 15.7 11a1.5 1.5 0 0 0-2.15.04L4 20.5" />
+    </>,
+    props,
+  );
+}
+
 export function MenuIcon(props: IconProps) {
   return base(<path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" />, props);
 }

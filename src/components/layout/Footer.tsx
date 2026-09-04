@@ -76,8 +76,19 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <Container className="flex flex-col items-start justify-between gap-4 py-6 text-xs text-white/50 sm:flex-row sm:items-center">
-          <p>© {year} 7 Mile and Hoover Auto Services. All rights reserved.</p>
-          <CTA href={business.phone.href} variant="accent" className="border-white/30 text-white hover:bg-[var(--color-accent)] hover:text-[var(--color-ink)]">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
+            <p>© {year} 7 Mile and Hoover Auto Services. All rights reserved.</p>
+            <nav aria-label="Legal" className="flex items-center gap-3">
+              <Link href="/privacy-policy" className="hover:text-white">
+                Privacy Policy
+              </Link>
+              <span aria-hidden="true">·</span>
+              <Link href="/terms-of-service" className="hover:text-white">
+                Terms of Service
+              </Link>
+            </nav>
+          </div>
+          <CTA href={business.phone.href} variant="accent" className="border-white/30 hover:bg-[var(--color-accent)] hover:text-[var(--color-ink)]">
             <PhoneIcon className="h-4 w-4" />
             Call Now: {business.phone.display}
           </CTA>

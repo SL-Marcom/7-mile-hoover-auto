@@ -49,3 +49,40 @@ export function getFaqSchema(items: { question: string; answer: string }[]) {
     },
   });
 }
+
+/**
+ * Per-service schema.org Service JSON-LD, linked back to the site-wide
+ * AutoRepair organization by @id so both schemas describe the same business.
+ */
+export function getServiceSchema(service: { slug: string; name: string; shortDescription: string }) {
+  return buildSchema({
+    type: "Service",
+    data: {
+      name: service.name,
+      description: service.shortDescription,
+      serviceType: service.name,
+      url: `${business.siteUrl.value}/services/${service.slug}`,
+      provider: { "@id": `${business.siteUrl.value}/#organization` },
+      areaServed: { "@type": "City", name: "Detroit, MI" },
+    },
+  });
+}
+
+export interface BreadcrumbEntry {
+  name: string;
+  url: string;
+}
+
+export function getBreadcrumbSchema(items: BreadcrumbEntry[]) {
+  return buildSchema({
+    type: "BreadcrumbList",
+    data: {
+      itemListElement: items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        item: `${business.siteUrl.value}${item.url}`,
+      })),
+    },
+  });
+}

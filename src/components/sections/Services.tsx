@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
-import { ChevronRightIcon, SERVICE_ICONS } from "@/components/icons";
+import { ServiceCard } from "@/components/sections/ServiceCard";
 import { business } from "@/content/business";
 
 export function Services() {
@@ -20,24 +19,9 @@ export function Services() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {business.services.map((service) => {
-            const Icon = SERVICE_ICONS[service.icon];
-            return (
-              <Link
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                className="group flex flex-col rounded-lg border border-[var(--color-border)] p-5 transition hover:border-[var(--color-primary)] hover:shadow-[0_4px_0_0_var(--color-primary)]"
-              >
-                <Icon className="h-8 w-8 text-[var(--color-primary)]" />
-                <h3 className="mt-4 text-base font-bold text-[var(--color-ink)]">{service.name}</h3>
-                <p className="mt-2 flex-1 text-sm leading-6 text-[var(--color-muted)]">{service.shortDescription}</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary)]">
-                  Learn more
-                  <ChevronRightIcon className="h-4 w-4 transition group-hover:translate-x-0.5" />
-                </span>
-              </Link>
-            );
-          })}
+          {business.services.map((service) => (
+            <ServiceCard key={service.slug} service={service} />
+          ))}
         </div>
 
         <div className="mt-8 flex justify-center sm:hidden">

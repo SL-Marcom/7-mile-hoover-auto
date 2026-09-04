@@ -2,7 +2,7 @@ import { cn } from "@/lib/cn";
 
 export function Label({ className, ...props }: React.LabelHTMLAttributes<HTMLLabelElement>) {
   return (
-    <label className={cn("mb-2 block text-sm font-medium text-slate-900", className)} {...props} />
+    <label className={cn("mb-2 block text-sm font-semibold text-[var(--color-ink)]", className)} {...props} />
   );
 }
 
@@ -10,7 +10,7 @@ export function Input({ className, ...props }: React.InputHTMLAttributes<HTMLInp
   return (
     <input
       className={cn(
-        "w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 shadow-sm outline-none transition focus:border-slate-900 focus:ring-2 focus:ring-slate-900/10",
+        "w-full rounded-md border border-[var(--color-border)] bg-white px-4 py-3 text-base text-[var(--color-ink)] shadow-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15",
         className,
       )}
       {...props}
@@ -22,7 +22,7 @@ export function Textarea({ className, ...props }: React.TextareaHTMLAttributes<H
   return (
     <textarea
       className={cn(
-        "min-h-32 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 shadow-sm outline-none transition focus:border-slate-900 focus:ring-2 focus:ring-slate-900/10",
+        "min-h-32 w-full rounded-md border border-[var(--color-border)] bg-white px-4 py-3 text-base text-[var(--color-ink)] shadow-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15",
         className,
       )}
       {...props}
