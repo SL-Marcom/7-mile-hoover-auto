@@ -73,6 +73,27 @@ export interface BreadcrumbEntry {
   url: string;
 }
 
+/**
+ * BlogPosting JSON-LD for an article page. Deliberately omits `image` since
+ * no real photo exists yet — an inaccurate image reference in structured
+ * data is worse than no image reference at all.
+ */
+export function getArticleSchema(post: { title: string; metaDescription: string; slug: string; publishedAt: string }) {
+  return buildSchema({
+    type: "BlogPosting",
+    data: {
+      headline: post.title,
+      description: post.metaDescription,
+      url: `${business.siteUrl.value}/blog/${post.slug}`,
+      datePublished: post.publishedAt,
+      dateModified: post.publishedAt,
+      author: { "@type": "Organization", name: business.brandName.value },
+      publisher: { "@id": `${business.siteUrl.value}/#organization` },
+      mainEntityOfPage: `${business.siteUrl.value}/blog/${post.slug}`,
+    },
+  });
+}
+
 export function getBreadcrumbSchema(items: BreadcrumbEntry[]) {
   return buildSchema({
     type: "BreadcrumbList",

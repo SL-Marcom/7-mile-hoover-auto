@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ServiceCard } from "@/components/sections/ServiceCard";
+import { ServiceCtaCard } from "@/components/sections/ServiceCtaCard";
 import { CTASection } from "@/components/sections/CTASection";
 import { PhoneIcon } from "@/components/icons";
 import { business } from "@/content/business";
@@ -56,6 +57,7 @@ export default function ServicesPage() {
             {business.services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
+            <ServiceCtaCard />
           </div>
           <p className="mt-10 max-w-3xl text-sm text-[var(--color-muted)]">
             We focus on mechanical auto repair and maintenance. We do not perform collision repair, auto body work,

@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
 import { ServiceCard } from "@/components/sections/ServiceCard";
+import { ServiceCtaCard } from "@/components/sections/ServiceCtaCard";
 import { business } from "@/content/business";
 
 export function Services() {
@@ -22,6 +23,7 @@ export function Services() {
           {business.services.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
+          <ServiceCtaCard />
         </div>
 
         <div className="mt-8 flex justify-center sm:hidden">
