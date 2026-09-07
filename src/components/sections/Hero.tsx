@@ -21,8 +21,9 @@ export function Hero() {
         alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
         fill
         priority
+        quality={95}
         sizes="100vw"
-        className="object-cover object-[center_38%] lg:scale-[1.3] lg:object-[80%_38%] lg:origin-[85%_38%]"
+        className="object-cover object-[center_38%] lg:object-[78%_38%]"
       />
 
       {/* Mobile/tablet: text spans nearly the full width, so a stronger, more uniform wash keeps it readable. */}
