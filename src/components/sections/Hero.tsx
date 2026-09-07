@@ -22,7 +22,7 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[center_38%]"
+        className="object-cover object-[center_38%] lg:scale-[1.3] lg:object-[80%_38%] lg:origin-[85%_38%]"
       />
 
       {/* Mobile/tablet: text spans nearly the full width, so a stronger, more uniform wash keeps it readable. */}
@@ -41,7 +41,7 @@ export function Hero() {
         className="absolute inset-0 hidden lg:block"
         style={{
           background:
-            "linear-gradient(90deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.94) 26%, rgba(255,255,255,0.75) 48%, rgba(255,255,255,0.38) 68%, rgba(255,255,255,0.08) 86%, rgba(255,255,255,0) 100%)",
+            "linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.92) 20%, rgba(255,255,255,0.82) 36%, rgba(255,255,255,0.45) 45%, rgba(255,255,255,0.12) 54%, rgba(255,255,255,0) 62%)",
         }}
       />
 
