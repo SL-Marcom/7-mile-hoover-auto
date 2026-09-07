@@ -18,7 +18,7 @@ const NAV_LINKS = [
 export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-white">
-      <div className="hidden bg-[var(--color-ink)] text-white md:block">
+      <div className="hidden bg-[var(--color-ink)] text-white lg:block">
         <Container className="flex items-center justify-between py-2 text-xs">
           <div className="flex items-center gap-6">
             <span className="inline-flex items-center gap-1.5">
@@ -41,7 +41,7 @@ export function Header() {
         <Container className="flex items-center justify-between py-3">
           <Logo />
 
-          <nav aria-label="Primary" className="hidden items-center gap-7 md:flex">
+          <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
             {NAV_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className="text-sm font-semibold text-[var(--color-ink)] transition hover:text-[var(--color-primary)]">
                 {link.label}
@@ -49,7 +49,7 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             <CTA href={business.phone.href} variant="primary">
               <PhoneIcon className="h-4 w-4" />
               {business.ctas.primary.label}
