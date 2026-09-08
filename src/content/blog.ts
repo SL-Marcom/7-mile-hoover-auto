@@ -767,7 +767,8 @@ export const blogPosts: BlogPost[] = [
       "Freeze-thaw cycles and pothole season are genuinely hard on a vehicle's suspension. Here's what actually happens underneath your car.",
     publishedAt: "2026-08-18",
     category: "Suspension",
-    heroImageLabel: "Vehicle wheel and suspension over a pothole",
+    heroImageLabel: "Close-up of a vehicle's strut, coil spring, and control arm",
+    heroImageSrc: "/images/blog/detroit-potholes-winter-roads-suspension-damage.jpg",
     relatedServiceSlugs: ["suspension-repair", "wheel-alignment", "steering-repair"],
     relatedPostSlugs: ["why-is-my-car-pulling-to-one-side", "grinding-squealing-brakes-what-it-means"],
     body: [
