@@ -74,11 +74,17 @@ export interface BreadcrumbEntry {
 }
 
 /**
- * BlogPosting JSON-LD for an article page. Deliberately omits `image` since
- * no real photo exists yet — an inaccurate image reference in structured
- * data is worse than no image reference at all.
+ * BlogPosting JSON-LD for an article page. Only includes `image` when the
+ * post has a real photo (heroImageSrc) — an inaccurate image reference in
+ * structured data is worse than no image reference at all.
  */
-export function getArticleSchema(post: { title: string; metaDescription: string; slug: string; publishedAt: string }) {
+export function getArticleSchema(post: {
+  title: string;
+  metaDescription: string;
+  slug: string;
+  publishedAt: string;
+  heroImageSrc?: string;
+}) {
   return buildSchema({
     type: "BlogPosting",
     data: {
@@ -90,6 +96,7 @@ export function getArticleSchema(post: { title: string; metaDescription: string;
       author: { "@type": "Organization", name: business.brandName.value },
       publisher: { "@id": `${business.siteUrl.value}/#organization` },
       mainEntityOfPage: `${business.siteUrl.value}/blog/${post.slug}`,
+      ...(post.heroImageSrc ? { image: `${business.siteUrl.value}${post.heroImageSrc}` } : {}),
     },
   });
 }

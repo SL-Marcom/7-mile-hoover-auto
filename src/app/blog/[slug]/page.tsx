@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { createMetadata } from "@/lib/seo/metadata";
 import { getArticleSchema, getBreadcrumbSchema, getFaqSchema } from "@/content/schema";
@@ -72,7 +73,20 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <time dateTime={post.publishedAt} className="block text-sm text-[var(--color-muted)]">
             Published {formatDate(post.publishedAt)}
           </time>
-          <ImagePlaceholder label={post.heroImageLabel} aspect="wide" />
+          {post.heroImageSrc ? (
+            <div className="relative aspect-[21/9] w-full overflow-hidden rounded-lg">
+              <Image
+                src={post.heroImageSrc}
+                alt={post.heroImageLabel}
+                fill
+                priority
+                sizes="(min-width: 1024px) 768px, 100vw"
+                className="object-cover"
+              />
+            </div>
+          ) : (
+            <ImagePlaceholder label={post.heroImageLabel} aspect="wide" />
+          )}
         </Container>
       </Section>
 

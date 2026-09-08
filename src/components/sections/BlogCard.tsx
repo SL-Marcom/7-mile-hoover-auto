@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { ChevronRightIcon } from "@/components/icons";
 import type { BlogPost } from "@/content/blog";
@@ -13,7 +14,19 @@ export function BlogCard({ post }: { post: BlogPost }) {
       href={`/blog/${post.slug}`}
       className="group flex flex-col overflow-hidden rounded-lg border border-[var(--color-border)] bg-white transition hover:border-[var(--color-primary)] hover:shadow-[0_4px_0_0_var(--color-primary)]"
     >
-      <ImagePlaceholder label={post.heroImageLabel} aspect="video" framed={false} className="border-b border-[var(--color-border)]" />
+      {post.heroImageSrc ? (
+        <div className="relative aspect-video w-full overflow-hidden border-b border-[var(--color-border)]">
+          <Image
+            src={post.heroImageSrc}
+            alt={post.heroImageLabel}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <ImagePlaceholder label={post.heroImageLabel} aspect="video" framed={false} className="border-b border-[var(--color-border)]" />
+      )}
       <div className="flex flex-1 flex-col p-5">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-primary)]">{post.category}</p>
         <h3 className="mt-2 text-base font-bold leading-snug text-[var(--color-ink)]">{post.title}</h3>

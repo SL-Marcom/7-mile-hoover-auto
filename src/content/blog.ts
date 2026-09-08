@@ -27,6 +27,8 @@ export interface BlogPost {
   publishedAt: string;
   category: string;
   heroImageLabel: string;
+  /** Path under /public to a real photo. When absent, the hero renders the labeled placeholder instead. */
+  heroImageSrc?: string;
   relatedServiceSlugs: string[];
   relatedPostSlugs: string[];
   body: BlogBlock[];
@@ -45,6 +47,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-14",
     category: "Diagnostics",
     heroImageLabel: "Check engine warning light on a dashboard",
+    heroImageSrc: "/images/blog/why-is-my-check-engine-light-on.jpg",
     relatedServiceSlugs: ["check-engine-light-diagnostics", "auto-electrical-repair", "engine-repair"],
     relatedPostSlugs: ["common-car-electrical-problems-explained", "why-is-my-car-overheating"],
     body: [
@@ -194,6 +197,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-21",
     category: "Brakes",
     heroImageLabel: "Close-up of a brake caliper and rotor",
+    heroImageSrc: "/images/blog/grinding-squealing-brakes-what-it-means.jpg",
     relatedServiceSlugs: ["brake-repair", "suspension-repair", "wheel-alignment"],
     relatedPostSlugs: ["why-is-my-car-pulling-to-one-side", "detroit-potholes-winter-roads-suspension-damage"],
     body: [
@@ -335,6 +339,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-28",
     category: "Electrical",
     heroImageLabel: "Mechanic testing a car battery under the hood",
+    heroImageSrc: "/images/blog/car-wont-start-battery-starter-or-alternator.jpg",
     relatedServiceSlugs: ["starter-alternator-repair", "auto-electrical-repair"],
     relatedPostSlugs: ["common-car-electrical-problems-explained", "why-is-my-check-engine-light-on"],
     body: [
@@ -469,6 +474,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-08-04",
     category: "Cooling System",
     heroImageLabel: "Temperature gauge reading in the hot zone",
+    heroImageSrc: "/images/blog/why-is-my-car-overheating.jpg",
     relatedServiceSlugs: ["radiator-cooling-system-repair", "engine-repair", "ac-heating-repair"],
     relatedPostSlugs: ["why-is-my-check-engine-light-on", "signs-of-transmission-trouble"],
     body: [
@@ -615,7 +621,8 @@ export const blogPosts: BlogPost[] = [
       "A hesitation or a rough shift today can turn into a much bigger repair if it's ignored. Here's what to watch for.",
     publishedAt: "2026-08-11",
     category: "Transmission",
-    heroImageLabel: "Transmission fluid dipstick being checked",
+    heroImageLabel: "Driver shifting a manual transmission gear stick",
+    heroImageSrc: "/images/blog/signs-of-transmission-trouble.jpg",
     relatedServiceSlugs: ["transmission-repair", "engine-repair", "check-engine-light-diagnostics"],
     relatedPostSlugs: ["why-is-my-check-engine-light-on", "why-is-my-car-overheating"],
     body: [
@@ -898,6 +905,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-08-25",
     category: "Alignment",
     heroImageLabel: "Wheel alignment equipment on a vehicle's front wheel",
+    heroImageSrc: "/images/blog/why-is-my-car-pulling-to-one-side.jpg",
     relatedServiceSlugs: ["wheel-alignment", "suspension-repair", "brake-repair"],
     relatedPostSlugs: ["detroit-potholes-winter-roads-suspension-damage", "grinding-squealing-brakes-what-it-means"],
     body: [
@@ -1066,6 +1074,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-08-29",
     category: "AC & Heating",
     heroImageLabel: "Car AC vent close-up",
+    heroImageSrc: "/images/blog/ac-blowing-warm-air-causes.jpg",
     relatedServiceSlugs: ["ac-heating-repair", "radiator-cooling-system-repair", "auto-electrical-repair"],
     relatedPostSlugs: ["why-is-my-car-overheating", "common-car-electrical-problems-explained"],
     body: [
@@ -1207,6 +1216,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-09-01",
     category: "Preventive Maintenance",
     heroImageLabel: "Oil being drained during an oil change",
+    heroImageSrc: "/images/blog/how-often-should-you-get-an-oil-change.jpg",
     relatedServiceSlugs: ["oil-change-preventive-maintenance", "general-auto-repair", "engine-repair"],
     relatedPostSlugs: ["signs-of-transmission-trouble", "why-is-my-car-overheating"],
     body: [
@@ -1357,6 +1367,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-09-05",
     category: "Electrical",
     heroImageLabel: "Vehicle fuse box being inspected",
+    heroImageSrc: "/images/blog/common-car-electrical-problems-explained.jpg",
     relatedServiceSlugs: ["auto-electrical-repair", "starter-alternator-repair", "check-engine-light-diagnostics"],
     relatedPostSlugs: ["car-wont-start-battery-starter-or-alternator", "why-is-my-check-engine-light-on"],
     body: [
