@@ -5,8 +5,9 @@ import { business } from "@/content/business";
  * Site-wide AutoRepair (a schema.org AutomotiveBusiness subtype) JSON-LD.
  * Every value comes directly from src/content/business.ts, so it always
  * matches what's actually rendered on the page and updates everywhere the
- * moment business.ts is edited. No review/rating data is included — none
- * has been client-confirmed.
+ * moment business.ts is edited. No aggregateRating is included since no
+ * numeric rating or review count has been confirmed — individual reviews
+ * are emitted separately via getReviewSchema.
  */
 export function getOrganizationSchema() {
   return buildSchema({
@@ -97,6 +98,22 @@ export function getArticleSchema(post: {
       publisher: { "@id": `${business.siteUrl.value}/#organization` },
       mainEntityOfPage: `${business.siteUrl.value}/blog/${post.slug}`,
       ...(post.heroImageSrc ? { image: `${business.siteUrl.value}${post.heroImageSrc}` } : {}),
+    },
+  });
+}
+
+/**
+ * Individual customer Review JSON-LD, linked to the organization by @id.
+ * Deliberately omits reviewRating — no star rating was provided for any of
+ * these, and schema.org does not require one.
+ */
+export function getReviewSchema(review: { name: string; quote: string }) {
+  return buildSchema({
+    type: "Review",
+    data: {
+      itemReviewed: { "@id": `${business.siteUrl.value}/#organization` },
+      author: { "@type": "Person", name: review.name },
+      reviewBody: review.quote,
     },
   });
 }

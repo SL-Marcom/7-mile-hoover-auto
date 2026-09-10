@@ -5,10 +5,12 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Services } from "@/components/sections/Services";
 import { About } from "@/components/sections/About";
 import { LocationHours } from "@/components/sections/LocationHours";
+import { Reviews } from "@/components/sections/Reviews";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
-import { getFaqSchema } from "@/content/schema";
+import { getFaqSchema, getReviewSchema } from "@/content/schema";
 import { business } from "@/content/business";
+import { reviews } from "@/content/reviews";
 
 const HOME_FAQ_ITEMS = [
   {
@@ -38,15 +40,24 @@ export const metadata: Metadata = createMetadata({
 
 export default function Home() {
   const faqSchema = getFaqSchema(HOME_FAQ_ITEMS);
+  const reviewSchemas = reviews.map((review) => getReviewSchema(review));
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {reviewSchemas.map((schema, index) => (
+        <script
+          key={reviews[index].name}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <Hero />
       <WhyChooseUs />
       <Services />
       <About />
       <LocationHours />
+      <Reviews />
       <FAQ title="Common Questions" items={HOME_FAQ_ITEMS} viewAllHref="/faq" />
       <CTASection
         title="Need Auto Repair in Detroit?"

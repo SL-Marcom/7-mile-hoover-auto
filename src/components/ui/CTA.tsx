@@ -6,6 +6,7 @@ interface CTAProps {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "accent" | "ghost";
   className?: string;
+  external?: boolean;
 }
 
 export function CTA({
@@ -13,6 +14,7 @@ export function CTA({
   children,
   variant = "primary",
   className,
+  external = false,
 }: CTAProps) {
   const baseClasses =
     "inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
@@ -23,6 +25,19 @@ export function CTA({
     accent: "border-2 border-[var(--color-accent)] bg-white text-[var(--color-ink)] hover:bg-[var(--color-accent)]",
     ghost: "bg-transparent px-0 text-[var(--color-ink)] hover:opacity-70",
   };
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cn(baseClasses, variants[variant], className)}
+      >
+        {children}
+      </a>
+    );
+  }
 
   return (
     <Link href={href} className={cn(baseClasses, variants[variant], className)}>

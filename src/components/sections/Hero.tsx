@@ -20,7 +20,19 @@ const TRUST_POINTS = [
  */
 export function Hero() {
   return (
-    <Section className="relative isolate flex min-h-[calc(100svh-69px)] items-center overflow-hidden bg-white lg:min-h-[calc(100svh-105px)]">
+    <Section className="relative isolate flex min-h-[calc(100svh-69px)] items-start overflow-hidden bg-white lg:min-h-[calc(100svh-105px)] lg:items-center">
+      {/* Mobile/tablet: a dedicated portrait banner with the white text zone already built in, photo below. */}
+      <Image
+        src="/images/hero-shop-mobile.jpg"
+        alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
+        fill
+        priority
+        quality={90}
+        sizes="100vw"
+        className="object-cover object-top lg:hidden"
+      />
+
+      {/* Desktop: full shop photo with a left-to-right white fade behind the text. */}
       <Image
         src="/images/hero-shop-exterior.jpg"
         alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
@@ -28,17 +40,7 @@ export function Hero() {
         priority
         quality={95}
         sizes="100vw"
-        className="object-cover object-[center_38%] lg:scale-[1.1] lg:object-[88%_38%] lg:origin-[88%_38%]"
-      />
-
-      {/* Mobile/tablet: text spans nearly the full width, so a stronger, more uniform wash keeps it readable. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 lg:hidden"
-        style={{
-          background:
-            "linear-gradient(165deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.93) 40%, rgba(255,255,255,0.8) 65%, rgba(255,255,255,0.62) 100%)",
-        }}
+        className="hidden object-cover object-[88%_38%] lg:block lg:scale-[1.1] lg:origin-[88%_38%]"
       />
 
       {/* Desktop: smooth left-to-right fade — solid over the text, clear toward the photo on the right. */}
@@ -51,22 +53,26 @@ export function Hero() {
         }}
       />
 
-      <Container className="relative z-10 w-full py-16 sm:py-20">
-        <div className="max-w-xl space-y-6">
-          <p className="inline-flex items-center gap-2 rounded-md bg-[var(--color-surface)] px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-[var(--color-primary)]">
+      <Container className="relative z-10 w-full pt-6 pb-10 sm:pt-14 sm:pb-20 lg:py-20">
+        <div className="max-w-xl space-y-3 sm:space-y-6">
+          <p className="inline-flex items-center gap-2 rounded-md bg-[var(--color-surface)] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--color-primary)] sm:py-1.5 sm:text-xs">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-primary)]" />
             Full-Service Auto Repair · Detroit, MI
           </p>
 
-          <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-[var(--color-ink)] sm:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-extrabold leading-[1.05] tracking-tight text-[var(--color-ink)] sm:text-5xl lg:text-6xl">
             Honest Auto Repair for Detroit Drivers
           </h1>
 
-          <p className="text-lg leading-7 text-[var(--color-muted)] sm:text-xl">
+          {/* Shorter subhead on mobile only — the full sentence doesn't fit inside the mobile banner's white zone above the shop photo. */}
+          <p className="text-sm leading-5 text-[var(--color-muted)] sm:hidden">
+            Mechanical repair and maintenance for cars, trucks, and SUVs — all under one roof at 7 Mile and Hoover.
+          </p>
+          <p className="hidden text-lg leading-7 text-[var(--color-muted)] sm:block sm:text-xl">
             From brakes to transmissions, we diagnose the real problem and fix it right — mechanical repair and maintenance for cars, trucks, and SUVs, all under one roof at 7 Mile and Hoover.
           </p>
 
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex flex-col gap-2 sm:flex-row sm:gap-3">
             <CTA href={business.phone.href} variant="primary" className="text-base">
               <PhoneIcon className="h-4 w-4" />
               {business.ctas.primary.label}: {business.phone.display}
@@ -76,7 +82,7 @@ export function Hero() {
             </CTA>
           </div>
 
-          <ul className="flex flex-wrap gap-x-6 gap-y-3 pt-2">
+          <ul className="hidden flex-wrap gap-x-6 gap-y-3 pt-2 sm:flex">
             {TRUST_POINTS.map((point) => (
               <li key={point.label} className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-ink)]">
                 <point.icon className="h-5 w-5 text-[var(--color-primary)]" />

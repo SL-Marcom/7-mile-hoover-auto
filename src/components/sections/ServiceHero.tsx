@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CTA } from "@/components/ui/CTA";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -5,8 +6,11 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { PhoneIcon } from "@/components/icons";
 import { business, type Service } from "@/content/business";
+import { getServiceImage } from "@/content/serviceImages";
 
 export function ServiceHero({ service }: { service: Service }) {
+  const imageSrc = getServiceImage(service.slug);
+
   return (
     <Section className="bg-white">
       <Container className="grid gap-10 py-10 sm:py-14 lg:grid-cols-2 lg:items-stretch lg:py-16">
@@ -36,11 +40,24 @@ export function ServiceHero({ service }: { service: Service }) {
           </div>
         </div>
 
-        <ImagePlaceholder
-          label={`${service.name} photo`}
-          aspect="none"
-          className="h-64 sm:h-80 lg:h-auto lg:min-h-[420px]"
-        />
+        {imageSrc ? (
+          <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-auto lg:min-h-[420px]">
+            <Image
+              src={imageSrc}
+              alt={`${service.name} at ${business.brandName.value} in Detroit, MI`}
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        ) : (
+          <ImagePlaceholder
+            label={`${service.name} photo`}
+            aspect="none"
+            className="h-64 sm:h-80 lg:h-auto lg:min-h-[420px]"
+          />
+        )}
       </Container>
     </Section>
   );

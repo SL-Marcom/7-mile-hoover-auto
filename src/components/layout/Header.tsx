@@ -21,10 +21,15 @@ export function Header() {
       <div className="hidden bg-[var(--color-ink)] text-white lg:block">
         <Container className="flex items-center justify-between py-2 text-xs">
           <div className="flex items-center gap-6">
-            <span className="inline-flex items-center gap-1.5">
+            <a
+              href={business.address.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-[var(--color-accent)]"
+            >
               <MapPinIcon className="h-3.5 w-3.5 text-[var(--color-accent)]" />
               {business.address.full}
-            </span>
+            </a>
             <span className="inline-flex items-center gap-1.5">
               <ClockIcon className="h-3.5 w-3.5 text-[var(--color-accent)]" />
               Mon–Fri 8:30–6:00 · Sat 8:30–3:00 · Sun Closed

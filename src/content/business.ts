@@ -51,7 +51,7 @@ export const business = {
     postalCode: "48234",
     country: "US",
     full: "11517 Seven Mile E, Detroit, MI 48234",
-    mapsUrl: "https://maps.app.goo.gl/1FiTEZpCnaSDx6m8A",
+    mapsUrl: "https://maps.app.goo.gl/SxgkHdHJBWHyuqeJ7",
     status: "client-confirmed" as FieldStatus,
   },
 
