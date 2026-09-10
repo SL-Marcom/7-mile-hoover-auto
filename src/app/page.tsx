@@ -56,8 +56,8 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <About />
-      <LocationHours />
       <Reviews />
+      <LocationHours />
       <FAQ title="Common Questions" items={HOME_FAQ_ITEMS} viewAllHref="/faq" />
       <CTASection
         title="Need Auto Repair in Detroit?"

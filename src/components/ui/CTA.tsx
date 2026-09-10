@@ -4,7 +4,7 @@ import { cn } from "@/lib/cn";
 interface CTAProps {
   href: string;
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "accent" | "ghost";
+  variant?: "primary" | "secondary" | "accent" | "ghost" | "light" | "lightOutline";
   className?: string;
   external?: boolean;
 }
@@ -24,6 +24,8 @@ export function CTA({
     secondary: "border-2 border-[var(--color-ink)] bg-transparent text-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-ink-foreground)]",
     accent: "border-2 border-[var(--color-accent)] bg-white text-[var(--color-ink)] hover:bg-[var(--color-accent)]",
     ghost: "bg-transparent px-0 text-[var(--color-ink)] hover:opacity-70",
+    light: "bg-white text-[var(--color-primary)] hover:bg-[var(--color-surface)]",
+    lightOutline: "border-2 border-white bg-transparent text-white hover:bg-white hover:text-[var(--color-primary)]",
   };
 
   if (external) {

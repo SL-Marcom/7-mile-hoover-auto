@@ -104,16 +104,25 @@ export function getArticleSchema(post: {
 
 /**
  * Individual customer Review JSON-LD, linked to the organization by @id.
- * Deliberately omits reviewRating — no star rating was provided for any of
- * these, and schema.org does not require one.
+ * reviewRating is included only when the client has confirmed the star
+ * rating for that review.
  */
-export function getReviewSchema(review: { name: string; quote: string }) {
+export function getReviewSchema(review: { name: string; quote: string; rating?: number }) {
   return buildSchema({
     type: "Review",
     data: {
       itemReviewed: { "@id": `${business.siteUrl.value}/#organization` },
       author: { "@type": "Person", name: review.name },
       reviewBody: review.quote,
+      ...(review.rating
+        ? {
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: review.rating,
+              bestRating: 5,
+            },
+          }
+        : {}),
     },
   });
 }

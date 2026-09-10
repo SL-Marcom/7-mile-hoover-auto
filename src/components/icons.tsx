@@ -217,6 +217,14 @@ export function CloseIcon(props: IconProps) {
   return base(<path d="M5 5l14 14M19 5 5 19" />, props);
 }
 
+export function StarIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={props.className} aria-hidden="true">
+      <path d="M12 2.5l2.9 6.1 6.6.7-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6-4.9-4.6 6.6-.7z" />
+    </svg>
+  );
+}
+
 export const SERVICE_ICONS: Record<string, (props: IconProps) => React.ReactElement> = {
   brake: BrakeIcon,
   exhaust: ExhaustIcon,
