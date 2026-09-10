@@ -11,9 +11,9 @@ export interface ContactSubmitResult {
 /**
  * Sends a contact-form submission via Resend. Requires RESEND_API_KEY,
  * CONTACT_TO_EMAIL, and CONTACT_FROM_EMAIL to be set in the environment —
- * see .env.example. None of these are configured yet, so this currently
- * returns a clear "not configured" error instead of attempting to send,
- * rather than failing silently or claiming success.
+ * see .env.example. If any are missing this returns a clear "not
+ * configured" error instead of attempting to send, rather than failing
+ * silently or claiming success.
  */
 export async function sendContactEmail(formData: FormData): Promise<ContactSubmitResult> {
   const name = String(formData.get("name") ?? "").trim();
@@ -45,9 +45,17 @@ export async function sendContactEmail(formData: FormData): Promise<ContactSubmi
     const { error } = await resend.emails.send({
       from: fromEmail,
       to: toEmail,
-      replyTo: email,
-      subject: `New quote request from ${name}, ${business.brandName.value} website`,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      ...(email ? { replyTo: email } : {}),
+      subject: `New Quote Request — ${business.brandName.value}`,
+      text: [
+        `New quote request from the ${business.brandName.value} website.`,
+        "",
+        `Name: ${name}`,
+        `Email: ${email}`,
+        "",
+        "Message:",
+        message,
+      ].join("\n"),
     });
 
     if (error) {
