@@ -32,7 +32,7 @@ export function Hero() {
         className="object-cover object-top lg:hidden"
       />
 
-      {/* Desktop: full shop photo with a left-to-right white fade behind the text. */}
+      {/* Desktop: full shop photo, shown at its natural cover crop (no extra zoom) to keep it sharp. */}
       <Image
         src="/images/hero-shop-exterior.jpg"
         alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
@@ -40,7 +40,7 @@ export function Hero() {
         priority
         quality={95}
         sizes="100vw"
-        className="hidden object-cover object-[88%_38%] lg:block lg:scale-[1.1] lg:origin-[88%_38%]"
+        className="hidden object-cover object-[58%_35%] lg:block"
       />
 
       {/* Desktop: smooth left-to-right fade — solid over the text, clear toward the photo on the right. */}
@@ -49,7 +49,7 @@ export function Hero() {
         className="absolute inset-0 hidden lg:block"
         style={{
           background:
-            "linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.92) 20%, rgba(255,255,255,0.82) 36%, rgba(255,255,255,0.45) 45%, rgba(255,255,255,0.12) 54%, rgba(255,255,255,0) 62%)",
+            "linear-gradient(90deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.95) 22%, rgba(255,255,255,0.9) 38%, rgba(255,255,255,0.68) 48%, rgba(255,255,255,0.35) 58%, rgba(255,255,255,0) 68%)",
         }}
       />
 
