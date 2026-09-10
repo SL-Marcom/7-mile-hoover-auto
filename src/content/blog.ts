@@ -86,7 +86,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "Because so many different systems can trigger the same light, guessing at the cause rarely saves money. Two vehicles with the exact same warning light on can have completely different problems underneath it.",
       },
-      { type: "image", label: "Technician scanning a vehicle for diagnostic trouble codes" },
       {
         type: "h2",
         text: "Solid vs. Flashing: Why the Difference Matters",
@@ -221,7 +220,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "A grinding or scraping sound when braking usually means the pad material is gone and the metal backing plate is now grinding directly against the rotor. This can happen faster than expected once a pad crosses that threshold. Continuing to drive on grinding brakes can damage the rotors badly enough that they need to be replaced rather than resurfaced, turning a routine pad job into a larger repair. If you're hearing grinding, it's worth having it inspected soon rather than waiting.",
       },
-      { type: "image", label: "Worn brake pad compared to a new brake pad" },
       {
         type: "h2",
         text: "Other Brake Warning Signs Worth Knowing",
@@ -363,7 +361,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "The starter is the small motor that physically turns the engine over when you turn the key or press the start button. When a starter is failing, you may hear a single solid click but the engine doesn't crank at all, or you may need to try the key a few times before it engages. Unlike a weak battery, a failing starter often shows no other symptoms — the lights and radio work fine, but the engine simply doesn't turn over.",
       },
-      { type: "image", label: "Starter motor removed from a vehicle for testing" },
       {
         type: "h2",
         text: "The Alternator: Starts Fine, Then Dies Again",
@@ -505,7 +502,6 @@ export const blogPosts: BlogPost[] = [
           "A failed radiator fan",
         ],
       },
-      { type: "image", label: "Coolant reservoir and radiator under the hood" },
       {
         type: "h2",
         text: "Warning Signs Before the Gauge Hits the Red",
@@ -652,7 +648,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "Manual transmissions show trouble differently, often through a clutch that feels off, grinding when shifting gears, or difficulty getting into a specific gear.",
       },
-      { type: "image", label: "Underside view of a vehicle's transmission" },
       {
         type: "h2",
         text: "Fluid Leaks and Burning Smells",
@@ -792,7 +787,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "Michigan's winter freeze-thaw cycle is a major reason potholes form in the first place: water seeps into small cracks in the pavement, freezes and expands, and gradually breaks the road surface apart. On top of pothole impacts, winter road salt accelerates corrosion on metal suspension components like tie rod ends, control arm bushings, and strut mounts. The combination of physical impacts and corrosion is why Detroit-area vehicles often need more frequent suspension attention than the same vehicle might in a milder climate.",
       },
-      { type: "image", label: "Suspension control arm and bushing inspection" },
       {
         type: "h2",
         text: "Signs Your Suspension Took a Hit",
@@ -951,7 +945,6 @@ export const blogPosts: BlogPost[] = [
           "Normal wear over time, especially on rougher roads",
         ],
       },
-      { type: "image", label: "Alignment measurement readout on a shop monitor" },
       {
         type: "h2",
         text: "Signs Your Alignment May Be Off",
@@ -1113,7 +1106,6 @@ export const blogPosts: BlogPost[] = [
           "A failing condenser that can't release heat properly",
         ],
       },
-      { type: "image", label: "AC compressor and refrigerant lines under the hood" },
       {
         type: "h2",
         text: "Why AC Problems Can Point to the Cooling System Too",
@@ -1263,7 +1255,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "A lot of everyday Detroit driving — short commutes, stop-and-go traffic, and Michigan's seasonal temperature extremes — actually falls closer to the \"severe\" category than people expect, which is worth factoring in when deciding how often to bring your vehicle in.",
       },
-      { type: "image", label: "Oil filter and fresh oil ready for an oil change" },
       {
         type: "h2",
         text: "Does the Oil Filter Matter as Much as the Oil?",
@@ -1397,7 +1388,6 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "A fuse is designed to blow when too much current passes through a circuit, protecting the wiring and components behind it. A fuse that blows once might be a coincidence, but a fuse that blows repeatedly means something in that circuit is drawing too much current — a short, a failing component, or damaged wiring. Simply replacing the fuse over and over without finding the underlying cause isn't a real fix, and can occasionally make the problem worse.",
       },
-      { type: "image", label: "Close-up of an automotive fuse box with fuses removed" },
       {
         type: "h2",
         text: "Power Windows, Locks, and Other Accessories",

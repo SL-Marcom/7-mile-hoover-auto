@@ -2,10 +2,15 @@ import Image from "next/image";
 import { CTA } from "@/components/ui/CTA";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { PhoneIcon, CheckIcon } from "@/components/icons";
+import { PhoneIcon, WrenchIcon, DiagnosticsIcon, MapPinIcon } from "@/components/icons";
 import { business } from "@/content/business";
 
-const QUICK_SERVICES = ["Brakes", "Engine", "Transmission", "Diagnostics", "Suspension", "AC & Heating"];
+/** Mirrors 3 of the 4 points already used (and approved) in WhyChooseUs — no new claims introduced. */
+const TRUST_POINTS = [
+  { icon: WrenchIcon, label: "Mechanical Repair Focused" },
+  { icon: DiagnosticsIcon, label: "Diagnosis Before Repair" },
+  { icon: MapPinIcon, label: "Local to Detroit, MI" },
+];
 
 /**
  * Header height steps from 69px (mobile nav, no top info bar) to 105px at
@@ -23,7 +28,7 @@ export function Hero() {
         priority
         quality={95}
         sizes="100vw"
-        className="object-cover object-[center_38%] lg:object-[78%_38%]"
+        className="object-cover object-[center_38%] lg:scale-[1.1] lg:object-[88%_38%] lg:origin-[88%_38%]"
       />
 
       {/* Mobile/tablet: text spans nearly the full width, so a stronger, more uniform wash keeps it readable. */}
@@ -71,11 +76,11 @@ export function Hero() {
             </CTA>
           </div>
 
-          <ul className="flex flex-wrap gap-x-5 gap-y-2 pt-2">
-            {QUICK_SERVICES.map((service) => (
-              <li key={service} className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-ink)]">
-                <CheckIcon className="h-4 w-4 text-[var(--color-primary)]" />
-                {service}
+          <ul className="flex flex-wrap gap-x-6 gap-y-3 pt-2">
+            {TRUST_POINTS.map((point) => (
+              <li key={point.label} className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-ink)]">
+                <point.icon className="h-5 w-5 text-[var(--color-primary)]" />
+                {point.label}
               </li>
             ))}
           </ul>
