@@ -7,6 +7,8 @@
  */
 export const serviceImages: Record<string, string> = {
   "brake-repair": "/images/blog/grinding-squealing-brakes-what-it-means.jpg",
+  "muffler-exhaust-repair": "/images/services/muffler-exhaust-repair.jpg",
+  "engine-repair": "/images/services/engine-repair.jpg",
   "check-engine-light-diagnostics": "/images/blog/why-is-my-check-engine-light-on.jpg",
   "transmission-repair": "/images/blog/signs-of-transmission-trouble.jpg",
   "oil-change-preventive-maintenance": "/images/blog/how-often-should-you-get-an-oil-change.jpg",
