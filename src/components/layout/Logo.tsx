@@ -16,7 +16,7 @@ export function Logo({ className, variant = "dark" }: LogoProps) {
   const accentColor = "text-[var(--color-primary)]";
 
   return (
-    <Link href="/" className={cn("flex flex-col leading-none", className)} aria-label="7 Mile and Hoover Auto Services — Home">
+    <Link href="/" className={cn("flex flex-col leading-none", className)} aria-label="7 Mile and Hoover Auto Services, Home">
       <span className={cn("font-display text-lg font-extrabold tracking-tight sm:text-xl", primaryColor)}>
         7 Mile <span className={accentColor}>&amp;</span> Hoover
       </span>

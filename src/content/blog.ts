@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "In most cases, a check engine light means your vehicle's computer has detected something outside of its normal operating range — it doesn't necessarily mean your car is about to break down. A steady, solid light usually points to a non-urgent issue, like a loose gas cap, a worn sensor, or a minor emissions-related fault. A flashing check engine light is different: it typically signals an active engine misfire, which can damage the catalytic converter if you keep driving. The safest approach is to have the light scanned so you know which situation you're actually dealing with.",
+        text: "In most cases, a check engine light means your vehicle's computer has detected something outside of its normal operating range, it doesn't necessarily mean your car is about to break down. A steady, solid light usually points to a non-urgent issue, like a loose gas cap, a worn sensor, or a minor emissions-related fault. A flashing check engine light is different: it typically signals an active engine misfire, which can damage the catalytic converter if you keep driving. The safest approach is to have the light scanned so you know which situation you're actually dealing with.",
       },
       {
         type: "h2",
@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Modern vehicles run dozens of sensors that monitor everything from oxygen levels in the exhaust to engine timing and fuel mixture. When one of these readings falls outside its expected range, the onboard computer stores a diagnostic trouble code (DTC) and turns on the check engine light. The light itself doesn't tell you what's wrong — it's just a signal that something needs to be looked at. Reading the actual code, and understanding the systems connected to it, is what turns that signal into a real answer.",
+        text: "Modern vehicles run dozens of sensors that monitor everything from oxygen levels in the exhaust to engine timing and fuel mixture. When one of these readings falls outside its expected range, the onboard computer stores a diagnostic trouble code (DTC) and turns on the check engine light. The light itself doesn't tell you what's wrong, it's just a signal that something needs to be looked at. Reading the actual code, and understanding the systems connected to it, is what turns that signal into a real answer.",
       },
       {
         type: "h2",
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A solid check engine light means the issue has been detected but isn't considered an immediate danger to the engine. It's still worth having scanned soon, since small issues can develop into bigger ones. A flashing check engine light is more urgent — it usually means the engine is misfiring badly enough that unburned fuel could reach and damage the catalytic converter. If your check engine light is flashing, it's best to reduce your speed, avoid heavy acceleration, and get it looked at as soon as possible rather than continuing to drive normally.",
+        text: "A solid check engine light means the issue has been detected but isn't considered an immediate danger to the engine. It's still worth having scanned soon, since small issues can develop into bigger ones. A flashing check engine light is more urgent, it usually means the engine is misfiring badly enough that unburned fuel could reach and damage the catalytic converter. If your check engine light is flashing, it's best to reduce your speed, avoid heavy acceleration, and get it looked at as soon as possible rather than continuing to drive normally.",
       },
       {
         type: "h2",
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Michigan's temperature swings put extra strain on sensors, hoses, and electrical connections, especially heading into and out of winter. Cold starts are harder on the engine and its sensors, and road salt can accelerate corrosion on wiring and connectors near the engine bay. None of that means every check engine light in Detroit is caused by winter — but it's part of why a light that comes and goes with the weather is still worth having scanned rather than ignored.",
+        text: "Michigan's temperature swings put extra strain on sensors, hoses, and electrical connections, especially heading into and out of winter. Cold starts are harder on the engine and its sensors, and road salt can accelerate corrosion on wiring and connectors near the engine bay. None of that means every check engine light in Detroit is caused by winter, but it's part of why a light that comes and goes with the weather is still worth having scanned rather than ignored.",
       },
       {
         type: "h2",
@@ -125,7 +125,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Ignoring a solid check engine light doesn't usually cause immediate damage, but it removes your ability to catch a developing problem while it's still minor. A small vacuum leak or a single failing sensor can, over enough time, put extra strain on other components — an engine running a slightly wrong fuel mixture, for example, can eventually affect the catalytic converter. What starts as an inexpensive fix has a way of becoming a more involved repair if the underlying cause sits unaddressed for months.",
+        text: "Ignoring a solid check engine light doesn't usually cause immediate damage, but it removes your ability to catch a developing problem while it's still minor. A small vacuum leak or a single failing sensor can, over enough time, put extra strain on other components, an engine running a slightly wrong fuel mixture, for example, can eventually affect the catalytic converter. What starts as an inexpensive fix has a way of becoming a more involved repair if the underlying cause sits unaddressed for months.",
       },
       {
         type: "h2",
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Many auto parts stores offer a free code scan, and it can be a reasonable first step to see what code is stored. But a code only points to a system or a range of possible causes — it isn't a diagnosis on its own. For example, a code pointing to a misfire doesn't tell you whether the cause is a worn spark plug, a failing ignition coil, or a vacuum leak. A free scan can be a useful starting point, but the actual inspection work is what turns that code into an accurate answer.",
+        text: "Many auto parts stores offer a free code scan, and it can be a reasonable first step to see what code is stored. But a code only points to a system or a range of possible causes, it isn't a diagnosis on its own. For example, a code pointing to a misfire doesn't tell you whether the cause is a worn spark plug, a failing ignition coil, or a vacuum leak. A free scan can be a useful starting point, but the actual inspection work is what turns that code into an accurate answer.",
       },
       {
         type: "h2",
@@ -141,11 +141,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "At 7 Mile and Hoover Auto Services, a check engine light visit starts with pulling the stored diagnostic codes and inspecting the systems connected to them — not just clearing the light and hoping it doesn't come back. We explain what the code points to in plain language, what we'd recommend, and why, before any repair work begins.",
+        text: "At 7 Mile and Hoover Auto Services, a check engine light visit starts with pulling the stored diagnostic codes and inspecting the systems connected to them, not just clearing the light and hoping it doesn't come back. We explain what the code points to in plain language, what we'd recommend, and why, before any repair work begins.",
       },
       {
         type: "p",
-        text: "If more than one code is stored, we also look at whether they're related to each other — sometimes several codes trace back to a single root cause, like a vacuum leak affecting multiple sensor readings at once, rather than several unrelated problems needing separate repairs.",
+        text: "If more than one code is stored, we also look at whether they're related to each other, sometimes several codes trace back to a single root cause, like a vacuum leak affecting multiple sensor readings at once, rather than several unrelated problems needing separate repairs.",
       },
       {
         type: "link",
@@ -202,7 +202,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "A high-pitched squeal usually means your brake pads have worn down to their built-in wear indicator and are telling you it's time for a replacement soon. A grinding noise is more serious — it often means the pads are already worn through and metal is contacting metal, which can damage your rotors. The type of noise you're hearing is actually a useful clue, and paying attention to it early can turn an inexpensive pad replacement into the whole story, instead of a bigger repair.",
+        text: "A high-pitched squeal usually means your brake pads have worn down to their built-in wear indicator and are telling you it's time for a replacement soon. A grinding noise is more serious, it often means the pads are already worn through and metal is contacting metal, which can damage your rotors. The type of noise you're hearing is actually a useful clue, and paying attention to it early can turn an inexpensive pad replacement into the whole story, instead of a bigger repair.",
       },
       {
         type: "h2",
@@ -240,7 +240,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A pulsing pedal often points to a warped rotor rather than the pads themselves, while pulling to one side during braking can point to an issue on just one wheel — a stuck caliper, for example — rather than the whole system.",
+        text: "A pulsing pedal often points to a warped rotor rather than the pads themselves, while pulling to one side during braking can point to an issue on just one wheel, a stuck caliper, for example, rather than the whole system.",
       },
       {
         type: "link",
@@ -253,7 +253,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Not necessarily. If rotors are caught early and are still within a safe thickness, they can sometimes be resurfaced rather than replaced, which is a less expensive option. But rotors that have been driven on while grinding, or that have worn below their minimum safe thickness, usually need to be replaced rather than resurfaced. This is one more reason grinding brakes are worth addressing quickly — the longer metal-on-metal contact continues, the more likely it is that resurfacing is no longer an option.",
+        text: "Not necessarily. If rotors are caught early and are still within a safe thickness, they can sometimes be resurfaced rather than replaced, which is a less expensive option. But rotors that have been driven on while grinding, or that have worn below their minimum safe thickness, usually need to be replaced rather than resurfaced. This is one more reason grinding brakes are worth addressing quickly, the longer metal-on-metal contact continues, the more likely it is that resurfacing is no longer an option.",
       },
       {
         type: "h2",
@@ -261,7 +261,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "There's no single mileage number that applies to every vehicle, because brake wear depends heavily on how and where you drive. Highway-heavy driving with fewer stops is relatively easy on brakes, since the vehicle spends less time actively slowing down. Stop-and-go city driving, frequent short trips, and carrying extra weight all wear pads faster, since the brakes are working harder and more often per mile driven. Driving style matters too — frequent hard braking wears pads down noticeably faster than smooth, early braking.",
+        text: "There's no single mileage number that applies to every vehicle, because brake wear depends heavily on how and where you drive. Highway-heavy driving with fewer stops is relatively easy on brakes, since the vehicle spends less time actively slowing down. Stop-and-go city driving, frequent short trips, and carrying extra weight all wear pads faster, since the brakes are working harder and more often per mile driven. Driving style matters too, frequent hard braking wears pads down noticeably faster than smooth, early braking.",
       },
       {
         type: "p",
@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A proper brake inspection looks at more than just pad thickness. At 7 Mile and Hoover, that means checking the pads and rotors, brake fluid condition, calipers and hardware, brake lines and hoses, and the parking brake — so if something else is contributing to the noise or the feel of the pedal, it gets caught at the same time instead of being missed.",
+        text: "A proper brake inspection looks at more than just pad thickness. At 7 Mile and Hoover, that means checking the pads and rotors, brake fluid condition, calipers and hardware, brake lines and hoses, and the parking brake, so if something else is contributing to the noise or the feel of the pedal, it gets caught at the same time instead of being missed.",
       },
       {
         type: "link",
@@ -290,7 +290,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Because worn suspension or alignment issues can sometimes mimic or worsen brake symptoms — like pulling or vibration — we'll flag those too if we find them during the inspection.",
+        text: "Because worn suspension or alignment issues can sometimes mimic or worsen brake symptoms, like pulling or vibration, we'll flag those too if we find them during the inspection.",
       },
     ],
     faqs: [
@@ -331,9 +331,9 @@ export const blogPosts: BlogPost[] = [
     title: "Car Won't Start? How to Tell If It's the Battery, Starter, or Alternator",
     seoTitle: "Car Won't Start: Battery, Starter, or Alternator? | 7 Mile and Hoover",
     metaDescription:
-      "A car that won't start could be the battery, starter, or alternator — and they're not the same repair. Here's how to tell them apart.",
+      "A car that won't start could be the battery, starter, or alternator, and they're not the same repair. Here's how to tell them apart.",
     excerpt:
-      "A dead battery, a bad starter, and a failing alternator can all leave you stuck — but the fix is different for each one.",
+      "A dead battery, a bad starter, and a failing alternator can all leave you stuck, but the fix is different for each one.",
     publishedAt: "2026-07-28",
     category: "Electrical",
     heroImageLabel: "Mechanic testing a car battery under the hood",
@@ -351,7 +351,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "The battery stores the energy needed to start the engine and power electronics before the alternator takes over. Batteries lose capacity gradually, and cold weather makes a weak battery's limitations obvious almost overnight — a battery that started the car fine in September can struggle by December simply because cold temperatures reduce a battery's effective output. Signs pointing toward the battery include slow cranking, dimming interior lights when you try to start the car, and a battery that's more than a few years old.",
+        text: "The battery stores the energy needed to start the engine and power electronics before the alternator takes over. Batteries lose capacity gradually, and cold weather makes a weak battery's limitations obvious almost overnight, a battery that started the car fine in September can struggle by December simply because cold temperatures reduce a battery's effective output. Signs pointing toward the battery include slow cranking, dimming interior lights when you try to start the car, and a battery that's more than a few years old.",
       },
       {
         type: "h2",
@@ -359,7 +359,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "The starter is the small motor that physically turns the engine over when you turn the key or press the start button. When a starter is failing, you may hear a single solid click but the engine doesn't crank at all, or you may need to try the key a few times before it engages. Unlike a weak battery, a failing starter often shows no other symptoms — the lights and radio work fine, but the engine simply doesn't turn over.",
+        text: "The starter is the small motor that physically turns the engine over when you turn the key or press the start button. When a starter is failing, you may hear a single solid click but the engine doesn't crank at all, or you may need to try the key a few times before it engages. Unlike a weak battery, a failing starter often shows no other symptoms, the lights and radio work fine, but the engine simply doesn't turn over.",
       },
       {
         type: "h2",
@@ -383,7 +383,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "These patterns are useful for describing the problem, but testing is what actually confirms the cause — several of these symptoms can overlap, and a battery that's simply drained by a failing alternator can look a lot like a battery problem on its own.",
+        text: "These patterns are useful for describing the problem, but testing is what actually confirms the cause, several of these symptoms can overlap, and a battery that's simply drained by a failing alternator can look a lot like a battery problem on its own.",
       },
       {
         type: "h2",
@@ -391,7 +391,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Sometimes a car won't start not because the battery or starter is failing on its own, but because something is drawing power while the vehicle is off — an interior light that didn't shut off, a failing relay, or an aftermarket accessory that wasn't wired correctly. This is called a parasitic drain, and it shows up as a battery that's fine one day and completely dead the next after sitting for a while, even though it tested fine recently. Finding a parasitic drain takes a bit more diagnostic work than a standard battery test, since it means tracing which circuit is staying active when it shouldn't be.",
+        text: "Sometimes a car won't start not because the battery or starter is failing on its own, but because something is drawing power while the vehicle is off, an interior light that didn't shut off, a failing relay, or an aftermarket accessory that wasn't wired correctly. This is called a parasitic drain, and it shows up as a battery that's fine one day and completely dead the next after sitting for a while, even though it tested fine recently. Finding a parasitic drain takes a bit more diagnostic work than a standard battery test, since it means tracing which circuit is staying active when it shouldn't be.",
       },
       {
         type: "h2",
@@ -399,7 +399,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A jump-start is a reasonable option if the symptoms point toward a simply drained battery — slow cranking, dim lights, and a vehicle that's been sitting for a while or was left with something on. It's not a good idea if you're hearing a single click with no cranking at all, since that pattern points more toward the starter, and a jump-start won't help a starter that isn't engaging. If a jump-start gets the car running but it dies again shortly after, that's a strong sign the charging system, not the battery, is the real issue.",
+        text: "A jump-start is a reasonable option if the symptoms point toward a simply drained battery, slow cranking, dim lights, and a vehicle that's been sitting for a while or was left with something on. It's not a good idea if you're hearing a single click with no cranking at all, since that pattern points more toward the starter, and a jump-start won't help a starter that isn't engaging. If a jump-start gets the car running but it dies again shortly after, that's a strong sign the charging system, not the battery, is the real issue.",
       },
       {
         type: "h2",
@@ -407,7 +407,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Cold starts demand more from a battery than warm ones, since the engine oil is thicker and the chemical reaction inside the battery itself is slower in cold temperatures. That's why a marginal battery that's been fine all year often finally fails on the first genuinely cold morning of the season. It's a timing coincidence more than a separate problem — but it's a good reason to have your charging system checked heading into winter rather than waiting for a no-start morning.",
+        text: "Cold starts demand more from a battery than warm ones, since the engine oil is thicker and the chemical reaction inside the battery itself is slower in cold temperatures. That's why a marginal battery that's been fine all year often finally fails on the first genuinely cold morning of the season. It's a timing coincidence more than a separate problem, but it's a good reason to have your charging system checked heading into winter rather than waiting for a no-start morning.",
       },
       {
         type: "h2",
@@ -434,7 +434,7 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "My car won't start but the lights and radio work — is it still the battery?",
+        question: "My car won't start but the lights and radio work, is it still the battery?",
         answer:
           "Not necessarily. If accessories work but the engine won't crank, it's often the starter rather than the battery, since a starter draws far more current than lights or the radio.",
       },
@@ -477,7 +477,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "An overheating engine almost always comes down to the cooling system losing its ability to move heat away from the engine — usually because of low coolant, a leak somewhere in the system, or a failed component like the water pump or thermostat. If your temperature gauge climbs into the red, the most important thing is to stop driving as soon as it's safe to do so. Continuing to drive an overheating engine, even for a few more minutes, is one of the fastest ways to turn a repairable issue into an expensive one.",
+        text: "An overheating engine almost always comes down to the cooling system losing its ability to move heat away from the engine, usually because of low coolant, a leak somewhere in the system, or a failed component like the water pump or thermostat. If your temperature gauge climbs into the red, the most important thing is to stop driving as soon as it's safe to do so. Continuing to drive an overheating engine, even for a few more minutes, is one of the fastest ways to turn a repairable issue into an expensive one.",
       },
       {
         type: "h2",
@@ -531,7 +531,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Yes, though it's less common. If coolant level looks fine but the vehicle still overheats, the cause is more likely a mechanical failure rather than a fluid problem — a water pump that's no longer circulating coolant effectively, a thermostat stuck closed so coolant isn't reaching the radiator, or a radiator fan that isn't engaging when it should, especially at low speeds or while idling. This is exactly why a proper diagnosis checks the whole system rather than stopping at the coolant reservoir.",
+        text: "Yes, though it's less common. If coolant level looks fine but the vehicle still overheats, the cause is more likely a mechanical failure rather than a fluid problem, a water pump that's no longer circulating coolant effectively, a thermostat stuck closed so coolant isn't reaching the radiator, or a radiator fan that isn't engaging when it should, especially at low speeds or while idling. This is exactly why a proper diagnosis checks the whole system rather than stopping at the coolant reservoir.",
       },
       {
         type: "h2",
@@ -539,7 +539,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If you notice the temperature gauge climbing, turn off the air conditioning and, if you're stuck in traffic, turning the heater on full blast can actually help pull some heat away from the engine temporarily. Pull over safely as soon as you can and shut the engine off. Don't open the radiator cap while the engine is hot — pressurized, scalding coolant can spray out. Once the engine has cooled, check the coolant level if you're comfortable doing so, but the safest next step is having it towed or inspected rather than continuing to drive on a system you know is compromised.",
+        text: "If you notice the temperature gauge climbing, turn off the air conditioning and, if you're stuck in traffic, turning the heater on full blast can actually help pull some heat away from the engine temporarily. Pull over safely as soon as you can and shut the engine off. Don't open the radiator cap while the engine is hot, pressurized, scalding coolant can spray out. Once the engine has cooled, check the coolant level if you're comfortable doing so, but the safest next step is having it towed or inspected rather than continuing to drive on a system you know is compromised.",
       },
       {
         type: "h2",
@@ -547,7 +547,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Yes — different vehicles are designed around different coolant formulations, and mixing incompatible types can cause the coolant to break down or lose its ability to protect against corrosion. If you're topping off coolant yourself, it's worth confirming it matches what your vehicle already uses rather than grabbing whatever is on the shelf. When in doubt, a 50/50 pre-mixed coolant matched to your vehicle's specification is the safer choice, or you can have it checked and topped off correctly as part of a service visit.",
+        text: "Yes, different vehicles are designed around different coolant formulations, and mixing incompatible types can cause the coolant to break down or lose its ability to protect against corrosion. If you're topping off coolant yourself, it's worth confirming it matches what your vehicle already uses rather than grabbing whatever is on the shelf. When in doubt, a 50/50 pre-mixed coolant matched to your vehicle's specification is the safer choice, or you can have it checked and topped off correctly as part of a service visit.",
       },
       {
         type: "h2",
@@ -563,7 +563,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Detroit summers bring real heat and humidity, which puts extra demand on a cooling system that may already be marginal from winter wear. Meanwhile, winter's freeze-thaw cycles and road salt can accelerate corrosion on metal cooling system components like the radiator and water pump. That combination — hard use in summer, corrosion exposure in winter — is part of why cooling systems in this climate benefit from being checked on a regular basis rather than only after a problem shows up.",
+        text: "Detroit summers bring real heat and humidity, which puts extra demand on a cooling system that may already be marginal from winter wear. Meanwhile, winter's freeze-thaw cycles and road salt can accelerate corrosion on metal cooling system components like the radiator and water pump. That combination, hard use in summer, corrosion exposure in winter, is part of why cooling systems in this climate benefit from being checked on a regular basis rather than only after a problem shows up.",
       },
       {
         type: "h2",
@@ -624,7 +624,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "The earliest signs of transmission trouble are usually subtle — a slight hesitation before the car shifts, a gear change that feels rougher than usual, or a delay between pressing the gas and feeling the car respond. These early symptoms are easy to dismiss because the car still drives. But transmission problems tend to get worse, not better, over time, and catching them early is often the difference between a manageable repair and a much larger one.",
+        text: "The earliest signs of transmission trouble are usually subtle, a slight hesitation before the car shifts, a gear change that feels rougher than usual, or a delay between pressing the gas and feeling the car respond. These early symptoms are easy to dismiss because the car still drives. But transmission problems tend to get worse, not better, over time, and catching them early is often the difference between a manageable repair and a much larger one.",
       },
       {
         type: "h2",
@@ -654,7 +654,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Transmission fluid plays a critical role in cooling and lubricating the internal components, and low or degraded fluid is one of the most common causes of shifting problems. A reddish or brownish fluid leak under the vehicle is worth investigating quickly, since a transmission that's low on fluid can suffer internal damage surprisingly fast. A burning smell is another red flag — it often points to fluid that's overheated or broken down, which reduces its ability to protect the transmission's internal parts.",
+        text: "Transmission fluid plays a critical role in cooling and lubricating the internal components, and low or degraded fluid is one of the most common causes of shifting problems. A reddish or brownish fluid leak under the vehicle is worth investigating quickly, since a transmission that's low on fluid can suffer internal damage surprisingly fast. A burning smell is another red flag, it often points to fluid that's overheated or broken down, which reduces its ability to protect the transmission's internal parts.",
       },
       {
         type: "h2",
@@ -662,7 +662,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Not at all. Many shifting complaints trace back to something far short of a rebuild — low or degraded fluid, a failing sensor that's affecting shift timing, or a mount that's loose and creating a clunk that feels like a shifting problem. A full rebuild or replacement is generally reserved for cases involving internal mechanical damage, which is exactly why a proper diagnosis matters before assuming the worst. Describing exactly what you're feeling, and when it happens, helps narrow down which category the issue falls into.",
+        text: "Not at all. Many shifting complaints trace back to something far short of a rebuild, low or degraded fluid, a failing sensor that's affecting shift timing, or a mount that's loose and creating a clunk that feels like a shifting problem. A full rebuild or replacement is generally reserved for cases involving internal mechanical damage, which is exactly why a proper diagnosis matters before assuming the worst. Describing exactly what you're feeling, and when it happens, helps narrow down which category the issue falls into.",
       },
       {
         type: "h2",
@@ -670,7 +670,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Not every transmission shows trouble the same way. Traditional automatic transmissions tend to show the delayed engagement, slipping, and rough shifting described above. Continuously variable transmissions, or CVTs, don't have traditional \"gears\" in the same sense, so trouble often shows up as a shuddering or vibrating sensation during acceleration, a whining noise, or the engine revving without a matching increase in speed. Manual transmissions more often show wear through the clutch — a pedal that feels different than it used to, difficulty finding a gear, or grinding during a shift.",
+        text: "Not every transmission shows trouble the same way. Traditional automatic transmissions tend to show the delayed engagement, slipping, and rough shifting described above. Continuously variable transmissions, or CVTs, don't have traditional \"gears\" in the same sense, so trouble often shows up as a shuddering or vibrating sensation during acceleration, a whining noise, or the engine revving without a matching increase in speed. Manual transmissions more often show wear through the clutch, a pedal that feels different than it used to, difficulty finding a gear, or grinding during a shift.",
       },
       {
         type: "p",
@@ -690,7 +690,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Stop-and-go city traffic, which is common throughout Detroit and the surrounding area, puts more wear on an automatic transmission than steady highway driving does, since it shifts far more frequently. Towing, hauling, or frequently driving in stop-and-go conditions all add up over time. None of this means a transmission problem is inevitable — it just means routine fluid service and paying attention to how your vehicle shifts are worth taking seriously rather than assuming everything is fine as long as the car keeps moving.",
+        text: "Stop-and-go city traffic, which is common throughout Detroit and the surrounding area, puts more wear on an automatic transmission than steady highway driving does, since it shifts far more frequently. Towing, hauling, or frequently driving in stop-and-go conditions all add up over time. None of this means a transmission problem is inevitable, it just means routine fluid service and paying attention to how your vehicle shifts are worth taking seriously rather than assuming everything is fine as long as the car keeps moving.",
       },
       {
         type: "p",
@@ -769,7 +769,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Hitting a pothole sends a sudden, concentrated impact through the tire and into the wheel, suspension, and steering components behind it. A single hard hit can bend a rim, damage a strut, or knock the suspension and alignment out of position — sometimes without any obvious sign until you notice the car pulling or the tires wearing unevenly weeks later. Michigan's freeze-thaw winters make potholes an annual reality, which is part of why suspension wear is such a common topic for drivers in this area.",
+        text: "Hitting a pothole sends a sudden, concentrated impact through the tire and into the wheel, suspension, and steering components behind it. A single hard hit can bend a rim, damage a strut, or knock the suspension and alignment out of position, sometimes without any obvious sign until you notice the car pulling or the tires wearing unevenly weeks later. Michigan's freeze-thaw winters make potholes an annual reality, which is part of why suspension wear is such a common topic for drivers in this area.",
       },
       {
         type: "h2",
@@ -777,7 +777,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "When a wheel drops into a pothole, the impact is absorbed first by the tire and rim, then by the suspension components connected to that wheel — control arms, ball joints, tie rods, struts, and bushings. A hard enough hit can bend a rim, damage a strut or shock, or shift these components just enough to throw off the vehicle's alignment, even if nothing looks visibly broken. Smaller, repeated impacts add up too, gradually wearing bushings and joints faster than they would on smoother roads.",
+        text: "When a wheel drops into a pothole, the impact is absorbed first by the tire and rim, then by the suspension components connected to that wheel, control arms, ball joints, tie rods, struts, and bushings. A hard enough hit can bend a rim, damage a strut or shock, or shift these components just enough to throw off the vehicle's alignment, even if nothing looks visibly broken. Smaller, repeated impacts add up too, gradually wearing bushings and joints faster than they would on smoother roads.",
       },
       {
         type: "h2",
@@ -807,7 +807,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h2",
-        text: "It's Not Just Suspension — Rims and Tires Take a Hit Too",
+        text: "It's Not Just Suspension, Rims and Tires Take a Hit Too",
       },
       {
         type: "p",
@@ -819,7 +819,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "You can't avoid every pothole, especially ones hidden under standing water or revealed suddenly in traffic, but a few habits reduce how hard the impacts hit. Keeping tires properly inflated helps them absorb impact more effectively — an underinflated tire is more prone to rim damage on a hard hit. Slowing down when you see a rough patch of road ahead, and gripping the wheel firmly rather than swerving suddenly, also reduces the severity of an impact and helps you keep control if you do hit one.",
+        text: "You can't avoid every pothole, especially ones hidden under standing water or revealed suddenly in traffic, but a few habits reduce how hard the impacts hit. Keeping tires properly inflated helps them absorb impact more effectively, an underinflated tire is more prone to rim damage on a hard hit. Slowing down when you see a rough patch of road ahead, and gripping the wheel firmly rather than swerving suddenly, also reduces the severity of an impact and helps you keep control if you do hit one.",
       },
       {
         type: "h2",
@@ -827,7 +827,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Suspension damage and alignment issues often go hand in hand. A bent or shifted suspension component changes the angles your wheels sit at, which is exactly what alignment measures and corrects. That's why an alignment performed on top of a damaged suspension component won't hold — the underlying part needs to be repaired first, and then the alignment can be corrected to specification.",
+        text: "Suspension damage and alignment issues often go hand in hand. A bent or shifted suspension component changes the angles your wheels sit at, which is exactly what alignment measures and corrects. That's why an alignment performed on top of a damaged suspension component won't hold, the underlying part needs to be repaired first, and then the alignment can be corrected to specification.",
       },
       {
         type: "link",
@@ -840,7 +840,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If you hit a pothole hard enough to notice it, it's worth paying closer attention to how the car drives over the next few days — any pulling, new noise, or vibration is worth having checked. Even if nothing feels different right away, a quick suspension inspection can catch a weakened component before it fails.",
+        text: "If you hit a pothole hard enough to notice it, it's worth paying closer attention to how the car drives over the next few days, any pulling, new noise, or vibration is worth having checked. Even if nothing feels different right away, a quick suspension inspection can catch a weakened component before it fails.",
       },
       {
         type: "h2",
@@ -858,7 +858,7 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "I hit a pothole and nothing feels wrong — do I still need it checked?",
+        question: "I hit a pothole and nothing feels wrong, do I still need it checked?",
         answer:
           "It's still worth a quick inspection. Some suspension damage doesn't show obvious symptoms right away and can develop into a bigger issue, like uneven tire wear or a failed component, over the following weeks.",
       },
@@ -896,7 +896,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "A car that pulls to one side usually points to alignment, but not always. Here's how to tell what's causing it and when to get it checked.",
     excerpt:
-      "Pulling to one side is one of the clearest signs something needs attention — but it isn't always your alignment. Here's how to tell.",
+      "Pulling to one side is one of the clearest signs something needs attention, but it isn't always your alignment. Here's how to tell.",
     publishedAt: "2026-08-25",
     category: "Alignment",
     heroImageLabel: "Wheel alignment equipment on a vehicle's front wheel",
@@ -906,7 +906,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "A car that pulls to one side while driving straight on a flat road is most often caused by a wheel alignment that's out of specification — but it isn't the only possible cause. Uneven tire pressure, a dragging brake caliper, and worn suspension components can all produce a similar pulling sensation. Paying attention to when the pulling happens can help narrow down which one you're actually dealing with.",
+        text: "A car that pulls to one side while driving straight on a flat road is most often caused by a wheel alignment that's out of specification, but it isn't the only possible cause. Uneven tire pressure, a dragging brake caliper, and worn suspension components can all produce a similar pulling sensation. Paying attention to when the pulling happens can help narrow down which one you're actually dealing with.",
       },
       {
         type: "h2",
@@ -914,7 +914,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Not always. A small alignment deviation might not produce a noticeable pull at all, but it can still cause faster tire wear over time simply because the tires aren't meeting the road at the correct angle. This is one of the reasons alignment is often recommended alongside new tires or after suspension work, even without an obvious pulling complaint — catching a mild deviation early protects a brand-new set of tires from wearing unevenly before their time.",
+        text: "Not always. A small alignment deviation might not produce a noticeable pull at all, but it can still cause faster tire wear over time simply because the tires aren't meeting the road at the correct angle. This is one of the reasons alignment is often recommended alongside new tires or after suspension work, even without an obvious pulling complaint, catching a mild deviation early protects a brand-new set of tires from wearing unevenly before their time.",
       },
       {
         type: "h2",
@@ -922,7 +922,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Alignment refers to the angles your wheels sit at relative to the road and to each other — measurements like camber, caster, and toe. When these angles are within specification, the vehicle tracks straight with even, minimal effort at the steering wheel. When they're off, even slightly, the car can pull toward one side, and the tires start wearing unevenly because they're not making contact with the road the way they're supposed to.",
+        text: "Alignment refers to the angles your wheels sit at relative to the road and to each other, measurements like camber, caster, and toe. When these angles are within specification, the vehicle tracks straight with even, minimal effort at the steering wheel. When they're off, even slightly, the car can pull toward one side, and the tires start wearing unevenly because they're not making contact with the road the way they're supposed to.",
       },
       {
         type: "h2",
@@ -1082,7 +1082,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "It's worth separating two complaints that sometimes get lumped together. Warm air coming from the vents at normal fan strength usually points to the refrigerant system or compressor. Weak or no airflow at all, even if the air is cold, usually points somewhere else entirely — a failing blower motor, a clogged cabin air filter restricting flow, or a blend door that's stuck in the wrong position. Knowing which of the two you're actually experiencing helps point the diagnosis in the right direction from the start.",
+        text: "It's worth separating two complaints that sometimes get lumped together. Warm air coming from the vents at normal fan strength usually points to the refrigerant system or compressor. Weak or no airflow at all, even if the air is cold, usually points somewhere else entirely, a failing blower motor, a clogged cabin air filter restricting flow, or a blend door that's stuck in the wrong position. Knowing which of the two you're actually experiencing helps point the diagnosis in the right direction from the start.",
       },
       {
         type: "h2",
@@ -1133,7 +1133,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Refrigerant doesn't get \"used up\" the way fuel does — a properly sealed AC system should hold its refrigerant charge for years. If a system is low, that almost always means refrigerant has escaped somewhere, whether through a small crack in a line, a failing seal, or a worn fitting. Simply recharging the system without finding the leak usually means the same warm-air problem returns within weeks or months, since the refrigerant has somewhere to keep escaping from. Finding and repairing the actual leak is what makes a recharge worth doing.",
+        text: "Refrigerant doesn't get \"used up\" the way fuel does, a properly sealed AC system should hold its refrigerant charge for years. If a system is low, that almost always means refrigerant has escaped somewhere, whether through a small crack in a line, a failing seal, or a worn fitting. Simply recharging the system without finding the leak usually means the same warm-air problem returns within weeks or months, since the refrigerant has somewhere to keep escaping from. Finding and repairing the actual leak is what makes a recharge worth doing.",
       },
       {
         type: "h2",
@@ -1149,7 +1149,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Detroit summers get hot and humid enough that a failing AC system is more than just an inconvenience on a long drive. And because heating and AC share some components in many vehicles, a system that isn't working right in summer can sometimes point to an issue that would also affect your heat later in the year — which matters heading into a Michigan winter.",
+        text: "Detroit summers get hot and humid enough that a failing AC system is more than just an inconvenience on a long drive. And because heating and AC share some components in many vehicles, a system that isn't working right in summer can sometimes point to an issue that would also affect your heat later in the year, which matters heading into a Michigan winter.",
       },
       {
         type: "h2",
@@ -1223,7 +1223,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Modern synthetic oils are formulated to hold up longer than older conventional oils, and manufacturers factor that into their recommended service intervals. Two different vehicles, or even the same vehicle using two different oil types, can have genuinely different appropriate intervals. Rather than relying on a generic number, the most reliable source is your vehicle's owner's manual — or asking a shop what's appropriate for your specific make, model, and oil type.",
+        text: "Modern synthetic oils are formulated to hold up longer than older conventional oils, and manufacturers factor that into their recommended service intervals. Two different vehicles, or even the same vehicle using two different oil types, can have genuinely different appropriate intervals. Rather than relying on a generic number, the most reliable source is your vehicle's owner's manual, or asking a shop what's appropriate for your specific make, model, and oil type.",
       },
       {
         type: "h2",
@@ -1231,7 +1231,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Beyond draining the old oil and installing fresh oil and a new filter, a properly done oil change is also a chance to look underneath the vehicle and notice anything else developing — a slow leak, a worn belt, or a hose that's starting to crack. It's a routine service, but it's also one of the more frequent times a vehicle is up on a lift, which makes it a natural point to catch small issues early rather than only after they've become noticeable from the driver's seat.",
+        text: "Beyond draining the old oil and installing fresh oil and a new filter, a properly done oil change is also a chance to look underneath the vehicle and notice anything else developing, a slow leak, a worn belt, or a hose that's starting to crack. It's a routine service, but it's also one of the more frequent times a vehicle is up on a lift, which makes it a natural point to catch small issues early rather than only after they've become noticeable from the driver's seat.",
       },
       {
         type: "h2",
@@ -1253,7 +1253,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A lot of everyday Detroit driving — short commutes, stop-and-go traffic, and Michigan's seasonal temperature extremes — actually falls closer to the \"severe\" category than people expect, which is worth factoring in when deciding how often to bring your vehicle in.",
+        text: "A lot of everyday Detroit driving, short commutes, stop-and-go traffic, and Michigan's seasonal temperature extremes, actually falls closer to the \"severe\" category than people expect, which is worth factoring in when deciding how often to bring your vehicle in.",
       },
       {
         type: "h2",
@@ -1269,7 +1269,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Yes — the oil type your vehicle uses is one of the biggest factors in how long it can safely go between changes. Full synthetic oil generally holds up longer under heat and stress than conventional oil, which is part of why many newer vehicles that call for full synthetic have longer factory-recommended intervals than older vehicles designed around conventional oil. Using a different oil type than what's recommended, or mixing up intervals from a previous vehicle, is a common way people end up on a schedule that doesn't actually match what their current car needs.",
+        text: "Yes, the oil type your vehicle uses is one of the biggest factors in how long it can safely go between changes. Full synthetic oil generally holds up longer under heat and stress than conventional oil, which is part of why many newer vehicles that call for full synthetic have longer factory-recommended intervals than older vehicles designed around conventional oil. Using a different oil type than what's recommended, or mixing up intervals from a previous vehicle, is a common way people end up on a schedule that doesn't actually match what their current car needs.",
       },
       {
         type: "p",
@@ -1295,7 +1295,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Oil does more than just lubricate the engine's moving parts — it also helps carry heat away and keeps contaminants suspended so they don't build up on critical surfaces. Oil that's overdue for a change gradually loses its ability to do all of that, and an engine running on old, degraded oil experiences more wear than one running on fresh oil. That extra wear accumulates quietly, which is exactly why staying on a reasonable schedule matters more than it might seem day to day.",
+        text: "Oil does more than just lubricate the engine's moving parts, it also helps carry heat away and keeps contaminants suspended so they don't build up on critical surfaces. Oil that's overdue for a change gradually loses its ability to do all of that, and an engine running on old, degraded oil experiences more wear than one running on fresh oil. That extra wear accumulates quietly, which is exactly why staying on a reasonable schedule matters more than it might seem day to day.",
       },
       {
         type: "h2",
@@ -1303,7 +1303,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "At 7 Mile and Hoover, an oil change visit is also a chance to catch small issues early. Along with the oil and filter change, we check fluid levels, do a visual inspection of belts and hoses, check tire pressure, and do a general multi-point inspection — so if something else needs attention, you'll know about it while it's still manageable.",
+        text: "At 7 Mile and Hoover, an oil change visit is also a chance to catch small issues early. Along with the oil and filter change, we check fluid levels, do a visual inspection of belts and hoses, check tire pressure, and do a general multi-point inspection, so if something else needs attention, you'll know about it while it's still manageable.",
       },
       {
         type: "link",
@@ -1386,7 +1386,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A fuse is designed to blow when too much current passes through a circuit, protecting the wiring and components behind it. A fuse that blows once might be a coincidence, but a fuse that blows repeatedly means something in that circuit is drawing too much current — a short, a failing component, or damaged wiring. Simply replacing the fuse over and over without finding the underlying cause isn't a real fix, and can occasionally make the problem worse.",
+        text: "A fuse is designed to blow when too much current passes through a circuit, protecting the wiring and components behind it. A fuse that blows once might be a coincidence, but a fuse that blows repeatedly means something in that circuit is drawing too much current, a short, a failing component, or damaged wiring. Simply replacing the fuse over and over without finding the underlying cause isn't a real fix, and can occasionally make the problem worse.",
       },
       {
         type: "h2",
@@ -1410,7 +1410,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Aftermarket accessories — stereos, remote starters, trailer wiring, alarm systems, and similar add-ons — are a common source of electrical gremlins, especially if they weren't installed cleanly. A poorly grounded accessory, a tapped wire that was spliced incorrectly, or a component drawing more current than the circuit was designed for can all cause symptoms that look like they're coming from somewhere else entirely, like a parasitic battery drain overnight or a flickering dashboard light. If your electrical issue started around the same time an accessory was installed, that's a useful detail worth mentioning.",
+        text: "Aftermarket accessories, stereos, remote starters, trailer wiring, alarm systems, and similar add-ons, are a common source of electrical gremlins, especially if they weren't installed cleanly. A poorly grounded accessory, a tapped wire that was spliced incorrectly, or a component drawing more current than the circuit was designed for can all cause symptoms that look like they're coming from somewhere else entirely, like a parasitic battery drain overnight or a flickering dashboard light. If your electrical issue started around the same time an accessory was installed, that's a useful detail worth mentioning.",
       },
       {
         type: "h2",
@@ -1418,7 +1418,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Electrical issues that come and go are notoriously frustrating, both for drivers and for diagnosis, because the fault isn't always present when the vehicle is being tested. A loose connection that only misbehaves when it's cold, or a wire that only shorts out when it flexes a certain way, can take longer to isolate than a problem that's constant. Being able to describe when the issue happens — cold mornings, after driving over a bump, only when it rains — gives a real head start on tracking it down.",
+        text: "Electrical issues that come and go are notoriously frustrating, both for drivers and for diagnosis, because the fault isn't always present when the vehicle is being tested. A loose connection that only misbehaves when it's cold, or a wire that only shorts out when it flexes a certain way, can take longer to isolate than a problem that's constant. Being able to describe when the issue happens, cold mornings, after driving over a bump, only when it rains, gives a real head start on tracking it down.",
       },
       {
         type: "h2",
@@ -1426,7 +1426,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Road salt and moisture are hard on electrical connectors and wiring, especially in areas exposed to the elements underneath the vehicle. Corrosion can create exactly the kind of intermittent, hard-to-pin-down electrical issue described above — working fine most of the time, then acting up after a wet or salty drive. It's a reasonable part of why electrical gremlins seem to show up more often as a Michigan winter goes on.",
+        text: "Road salt and moisture are hard on electrical connectors and wiring, especially in areas exposed to the elements underneath the vehicle. Corrosion can create exactly the kind of intermittent, hard-to-pin-down electrical issue described above, working fine most of the time, then acting up after a wet or salty drive. It's a reasonable part of why electrical gremlins seem to show up more often as a Michigan winter goes on.",
       },
       {
         type: "h2",
@@ -1434,7 +1434,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Rather than guessing, we test the actual circuit involved — checking wiring, fuses, connections, and the components themselves — to find the real cause. That includes checking the battery, starter, and charging system when relevant, since a lot of electrical symptoms trace back to the vehicle's core power system.",
+        text: "Rather than guessing, we test the actual circuit involved, checking wiring, fuses, connections, and the components themselves, to find the real cause. That includes checking the battery, starter, and charging system when relevant, since a lot of electrical symptoms trace back to the vehicle's core power system.",
       },
       {
         type: "link",
@@ -1460,7 +1460,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Is it safe to keep replacing a fuse that blows repeatedly?",
         answer:
-          "No — a fuse that blows repeatedly is protecting a circuit from a real underlying problem. Repeatedly replacing it without finding the cause can allow damage to continue.",
+          "No, a fuse that blows repeatedly is protecting a circuit from a real underlying problem. Repeatedly replacing it without finding the cause can allow damage to continue.",
       },
       {
         question: "Can cold weather cause electrical problems on its own?",

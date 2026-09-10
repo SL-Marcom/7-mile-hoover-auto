@@ -14,7 +14,7 @@ import { business } from "@/content/business";
 export const metadata: Metadata = createMetadata({
   title: `Auto Repair Services in Detroit, MI | ${business.brandName.value}`,
   description:
-    "Full-service mechanical auto repair in Detroit, MI — brakes, engines, transmissions, diagnostics, suspension, electrical, cooling, and more. Call now or request a free quote.",
+    "Full-service mechanical auto repair in Detroit, MI, brakes, engines, transmissions, diagnostics, suspension, electrical, cooling, and more. Call now or request a free quote.",
   canonicalUrl: `${business.siteUrl.value}/services`,
 });
 

@@ -44,7 +44,7 @@ export function ImagePlaceholder({ label, aspect = "video", framed = true, class
       <div className="flex flex-col items-center gap-2">
         <ImageIcon className="h-8 w-8 text-[var(--color-muted)]" />
         <p className="text-sm font-semibold text-[var(--color-ink)]">{label}</p>
-        <p className="text-xs text-[var(--color-muted)]">Image placeholder — photo to be added</p>
+        <p className="text-xs text-[var(--color-muted)]">Image placeholder, photo to be added</p>
       </div>
     </div>
   );

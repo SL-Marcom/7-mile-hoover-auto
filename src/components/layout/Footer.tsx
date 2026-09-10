@@ -27,7 +27,7 @@ export function Footer() {
             <p className="mt-0.5 text-xs font-bold uppercase tracking-[0.28em] text-white/50">Auto Services</p>
           </div>
           <p className="max-w-sm text-sm leading-6 text-white/70">
-            Full-service mechanical auto repair for Detroit and nearby communities — brakes, engines, transmissions, diagnostics, and more, all under one roof.
+            Full-service mechanical auto repair for Detroit and nearby communities, brakes, engines, transmissions, diagnostics, and more, all under one roof.
           </p>
           <div className="flex flex-col gap-2 pt-2 text-sm">
             <a href={business.phone.href} className="inline-flex items-center gap-2 font-semibold text-white hover:text-[var(--color-accent)]">

@@ -23,7 +23,7 @@ const HOME_FAQ_ITEMS = [
   },
   {
     question: "Do you offer free quotes?",
-    answer: "Yes — call us or request a free quote and we'll help you understand what your vehicle needs.",
+    answer: "Yes, call us or request a free quote and we'll help you understand what your vehicle needs.",
   },
   {
     question: "Do you do collision repair, body work, or tire services?",

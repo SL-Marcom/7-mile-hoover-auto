@@ -12,7 +12,7 @@ import { getSortedBlogPosts } from "@/content/blog";
 export const metadata: Metadata = createMetadata({
   title: `Auto Repair Blog | ${business.brandName.value}`,
   description:
-    "Answers to common auto repair questions for Detroit drivers — check engine lights, brakes, starting problems, cooling, transmission, suspension, and more.",
+    "Answers to common auto repair questions for Detroit drivers, check engine lights, brakes, starting problems, cooling, transmission, suspension, and more.",
   canonicalUrl: `${business.siteUrl.value}/blog`,
 });
 
@@ -36,7 +36,7 @@ export default function BlogPage() {
           </h1>
           <p className="text-lg leading-7 text-[var(--color-muted)]">
             Straightforward answers to common questions about check engine lights, brakes, starting problems, and
-            more — written for drivers in Detroit and nearby communities.
+            more, written for drivers in Detroit and nearby communities.
           </p>
         </Container>
       </Section>

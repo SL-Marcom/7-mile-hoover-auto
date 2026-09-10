@@ -46,7 +46,7 @@ export async function sendContactEmail(formData: FormData): Promise<ContactSubmi
       from: fromEmail,
       to: toEmail,
       replyTo: email,
-      subject: `New quote request from ${name} — ${business.brandName.value} website`,
+      subject: `New quote request from ${name}, ${business.brandName.value} website`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 

@@ -52,7 +52,7 @@ export function Contact({ title, description }: ContactProps) {
 
           {state.success && (
             <p role="status" className="text-sm font-medium text-emerald-700">
-              Thanks — we&rsquo;ve received your message and will follow up soon.
+              Thanks, we&rsquo;ve received your message and will follow up soon.
             </p>
           )}
           {!state.success && state.error && (

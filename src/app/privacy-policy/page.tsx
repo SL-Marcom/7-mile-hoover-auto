@@ -7,7 +7,7 @@ import { business } from "@/content/business";
 
 export const metadata: Metadata = createMetadata({
   title: `Privacy Policy | ${business.brandName.value}`,
-  description: `Privacy policy for the ${business.brandName.value} website — what information is collected and how it's used.`,
+  description: `Privacy policy for the ${business.brandName.value} website, what information is collected and how it's used.`,
   canonicalUrl: `${business.siteUrl.value}/privacy-policy`,
 });
 
@@ -21,20 +21,20 @@ const SECTIONS: { heading: string; body: string[] }[] = [
   {
     heading: "Information We Collect",
     body: [
-      "The only information we currently collect through this website is what you voluntarily provide through our contact form — your name, email address, and any message you write about your vehicle or service needs.",
+      "The only information we currently collect through this website is what you voluntarily provide through our contact form, your name, email address, and any message you write about your vehicle or service needs.",
       "We do not use cookies, analytics tools, or advertising trackers on this website at this time.",
     ],
   },
   {
     heading: "How We Use Information",
     body: [
-      "Any information submitted through our contact form is used only to respond to your inquiry — for example, to follow up about a quote request or a question about our services. We do not sell or share your information with third parties for marketing purposes.",
+      "Any information submitted through our contact form is used only to respond to your inquiry, for example, to follow up about a quote request or a question about our services. We do not sell or share your information with third parties for marketing purposes.",
     ],
   },
   {
     heading: "Third-Party Links",
     body: [
-      "Our website links to external services such as Google Maps for directions. These third-party sites have their own privacy practices, and we encourage you to review them separately — this policy only covers our own website.",
+      "Our website links to external services such as Google Maps for directions. These third-party sites have their own privacy practices, and we encourage you to review them separately, this policy only covers our own website.",
     ],
   },
   {

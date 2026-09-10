@@ -8,7 +8,7 @@ import { business } from "@/content/business";
 
 export const metadata: Metadata = createMetadata({
   title: `Frequently Asked Questions | ${business.brandName.value}`,
-  description: `Answers to common questions about ${business.brandName.value} — service area, hours, vehicle types, quotes, and what we do and don't repair.`,
+  description: `Answers to common questions about ${business.brandName.value}, service area, hours, vehicle types, quotes, and what we do and don't repair.`,
   canonicalUrl: `${business.siteUrl.value}/faq`,
 });
 
@@ -23,7 +23,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Do you offer free quotes?",
-    answer: "Yes — call us or request a free quote and we'll help you understand what your vehicle needs.",
+    answer: "Yes, call us or request a free quote and we'll help you understand what your vehicle needs.",
   },
   {
     question: "Do you do collision repair, body work, or tire services?",
@@ -33,7 +33,7 @@ const FAQ_ITEMS = [
   {
     question: "What if I'm not sure what's wrong with my vehicle?",
     answer:
-      "That's alright — describe what you're noticing when you call, and we can do a general inspection to help identify the cause.",
+      "That's alright, describe what you're noticing when you call, and we can do a general inspection to help identify the cause.",
   },
   {
     question: "How do I get started with a repair or quote?",

@@ -66,10 +66,10 @@ export function Hero() {
 
           {/* Shorter subhead on mobile only — the full sentence doesn't fit inside the mobile banner's white zone above the shop photo. */}
           <p className="text-sm leading-5 text-[var(--color-muted)] sm:hidden">
-            Mechanical repair and maintenance for cars, trucks, and SUVs — all under one roof at 7 Mile and Hoover.
+            Mechanical repair and maintenance for cars, trucks, and SUVs, all under one roof at 7 Mile and Hoover.
           </p>
           <p className="hidden text-lg leading-7 text-[var(--color-muted)] sm:block sm:text-xl">
-            From brakes to transmissions, we diagnose the real problem and fix it right — mechanical repair and maintenance for cars, trucks, and SUVs, all under one roof at 7 Mile and Hoover.
+            From brakes to transmissions, we diagnose the real problem and fix it right, mechanical repair and maintenance for cars, trucks, and SUVs, all under one roof at 7 Mile and Hoover.
           </p>
 
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-3">

@@ -6,7 +6,7 @@ const POINTS = [
   {
     icon: WrenchIcon,
     title: "Mechanical Repair Focused",
-    description: "We concentrate on mechanical auto repair and maintenance — brakes, engines, transmissions, and more — so that's where our attention stays.",
+    description: "We concentrate on mechanical auto repair and maintenance, brakes, engines, transmissions, and more, so that's where our attention stays.",
   },
   {
     icon: DiagnosticsIcon,
@@ -21,7 +21,7 @@ const POINTS = [
   {
     icon: PhoneIcon,
     title: "Straightforward to Reach",
-    description: "Call for a quick answer or request a free quote — no complicated runaround.",
+    description: "Call for a quick answer or request a free quote, no complicated runaround.",
   },
 ];
 

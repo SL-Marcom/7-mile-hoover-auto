@@ -69,7 +69,7 @@ export const business = {
     "Vehicle owners in Detroit and nearby communities who need reliable auto repair, maintenance, diagnostics, and mechanical repair.",
 
   primaryGoal:
-    "Generate qualified local auto repair leads — primarily phone calls and free quote requests — while improving organic search, Local SEO, and AI/LLM visibility.",
+    "Generate qualified local auto repair leads, primarily phone calls and free quote requests, while improving organic search, Local SEO, and AI/LLM visibility.",
 
   ctas: {
     primary: { label: "Call Now" },
@@ -87,7 +87,7 @@ export const business = {
   siteUrl: {
     value: "https://7hautoservice.com",
     status: "placeholder" as FieldStatus,
-    note: "Target domain for this build. DNS has not been connected and no deployment has occurred — used here only for canonical/OG/JSON-LD URLs.",
+    note: "Target domain for this build. DNS has not been connected and no deployment has occurred, used here only for canonical/OG/JSON-LD URLs.",
   },
 
   /** Read directly from the Client Intake Engine (clients/7-mile-hoover-auto/intake/context.ts). This build never deploys, publishes to production, changes DNS, installs analytics, or connects an external service regardless of these values. */
@@ -147,7 +147,7 @@ export const business = {
       icon: "exhaust",
       shortDescription: "Muffler, exhaust pipe, and exhaust system repair to address noise, leaks, and emissions issues.",
       intro: [
-        "A damaged exhaust system can mean excess noise, a burning smell, or exhaust fumes entering the cabin. We inspect the full exhaust path — from the manifold back to the tailpipe — to find where the problem actually is.",
+        "A damaged exhaust system can mean excess noise, a burning smell, or exhaust fumes entering the cabin. We inspect the full exhaust path, from the manifold back to the tailpipe, to find where the problem actually is.",
         "We repair or replace mufflers, pipes, and related exhaust components as needed.",
       ],
       included: [
@@ -165,7 +165,7 @@ export const business = {
         "Reduced fuel economy",
       ],
       whyTimelyMatters:
-        "An exhaust leak doesn't just mean extra noise — it can let exhaust fumes travel toward the cabin and puts added strain on related components. Rust and small leaks also tend to spread, so a repair that's manageable today can become a full section replacement later.",
+        "An exhaust leak doesn't just mean extra noise, it can let exhaust fumes travel toward the cabin and puts added strain on related components. Rust and small leaks also tend to spread, so a repair that's manageable today can become a full section replacement later.",
       faqs: [
         {
           question: "Why is my car suddenly louder than usual?",
@@ -173,7 +173,7 @@ export const business = {
         },
         {
           question: "Do you repair exhaust leaks or only replace parts?",
-          answer: "Both — depending on where the damage is and its condition, we repair or replace the affected section.",
+          answer: "Both, depending on where the damage is and its condition, we repair or replace the affected section.",
         },
         {
           question: "Is a rattling sound from underneath always the exhaust?",
@@ -209,12 +209,12 @@ export const business = {
         "Engine issues often start as a small symptom, like a hesitation or a minor leak, before developing into a larger repair. Diagnosing the cause early can help avoid more extensive engine damage and a bigger repair bill.",
       faqs: [
         {
-          question: "My check engine light is on but the car drives fine — do I need to worry?",
+          question: "My check engine light is on but the car drives fine, do I need to worry?",
           answer: "A steady check engine light with no other symptoms is still worth scanning. A flashing light means you should limit driving and have it looked at as soon as possible.",
         },
         {
           question: "What's the difference between engine repair and diagnostics?",
-          answer: "Diagnostics identifies the cause of the issue. Engine repair is the actual work — belts, gaskets, leaks, or other components — once we know what's wrong.",
+          answer: "Diagnostics identifies the cause of the issue. Engine repair is the actual work, belts, gaskets, leaks, or other components, once we know what's wrong.",
         },
         {
           question: "Do you work on both older and newer vehicles?",
@@ -229,7 +229,7 @@ export const business = {
       icon: "transmission",
       shortDescription: "Transmission diagnostics and repair for shifting problems, fluid leaks, and drivability concerns.",
       intro: [
-        "Transmission issues can start small — a hesitation or a delayed shift — and get worse quickly if left unaddressed. We diagnose the cause before recommending a repair.",
+        "Transmission issues can start small, a hesitation or a delayed shift, and get worse quickly if left unaddressed. We diagnose the cause before recommending a repair.",
         "We service and repair common automatic and manual transmission issues on everyday vehicles.",
       ],
       included: [
@@ -292,14 +292,14 @@ export const business = {
       faqs: [
         {
           question: "How often should I get an oil change?",
-          answer: "It depends on your vehicle and driving habits. We follow manufacturer-recommended intervals rather than a one-size-fits-all schedule — ask us what's right for your vehicle.",
+          answer: "It depends on your vehicle and driving habits. We follow manufacturer-recommended intervals rather than a one-size-fits-all schedule, ask us what's right for your vehicle.",
         },
         {
           question: "What's included in a multi-point inspection?",
           answer: "We check fluid levels, belts, hoses, and other key components so you know about developing issues early.",
         },
         {
-          question: "I don't know my vehicle's service history — can you help?",
+          question: "I don't know my vehicle's service history, can you help?",
           answer: "Yes, we can do a general inspection to get a clearer picture of where your vehicle stands and what maintenance may be due.",
         },
       ],
@@ -332,7 +332,7 @@ export const business = {
         "Electrical issues can be intermittent and easy to put off, but they often point to an underlying problem that affects other systems. Diagnosing the actual cause early helps avoid repeat failures and more involved repairs.",
       faqs: [
         {
-          question: "My interior lights are dim — is that an electrical issue?",
+          question: "My interior lights are dim, is that an electrical issue?",
           answer: "It can be, often related to the battery, charging system, or a wiring issue. We test the system to find the actual cause.",
         },
         {
@@ -381,7 +381,7 @@ export const business = {
           answer: "Yes, we explain what we find in plain language and what we'd recommend before starting any work.",
         },
         {
-          question: "My light is flashing — what should I do?",
+          question: "My light is flashing, what should I do?",
           answer: "A flashing check engine light usually means a more urgent issue. It's best to limit driving and have it looked at as soon as possible.",
         },
       ],
@@ -411,7 +411,7 @@ export const business = {
         "Nose-diving when braking",
       ],
       whyTimelyMatters:
-        "Worn suspension components don't just affect comfort — they change how your vehicle handles and can accelerate uneven tire wear. Addressing it early helps protect your tires and keep handling predictable.",
+        "Worn suspension components don't just affect comfort, they change how your vehicle handles and can accelerate uneven tire wear. Addressing it early helps protect your tires and keep handling predictable.",
       faqs: [
         {
           question: "How do I know if it's my suspension and not something else?",
@@ -423,7 +423,7 @@ export const business = {
         },
         {
           question: "Do you check suspension during other services?",
-          answer: "We can — a suspension inspection is often paired with related services like alignment or steering work.",
+          answer: "We can, a suspension inspection is often paired with related services like alignment or steering work.",
         },
       ],
       relatedSlugs: ["steering-repair", "wheel-alignment", "brake-repair"],
@@ -498,7 +498,7 @@ export const business = {
           answer: "Common signs are the vehicle pulling to one side, an off-center steering wheel while driving straight, or uneven tire wear.",
         },
         {
-          question: "I hit a pothole — should I get an alignment checked?",
+          question: "I hit a pothole, should I get an alignment checked?",
           answer: "Yes, hitting a pothole or curb is a common cause of alignment issues, even if nothing looks visibly wrong.",
         },
         {
@@ -535,7 +535,7 @@ export const business = {
         "An overheating engine can cause serious, expensive damage in a short amount of time. Catching a coolant leak or failing component early is one of the most effective ways to protect the engine.",
       faqs: [
         {
-          question: "My temperature gauge is reading higher than normal — is that urgent?",
+          question: "My temperature gauge is reading higher than normal, is that urgent?",
           answer: "It's worth having inspected promptly. Driving with an overheating engine can lead to serious damage.",
         },
         {
@@ -580,8 +580,8 @@ export const business = {
           answer: "This can point to several issues, including a refrigerant leak or a problem with the AC system's components. We diagnose the actual cause before recommending a repair.",
         },
         {
-          question: "My heat isn't working — could that be related to my cooling system?",
-          answer: "It can be — the heating system shares components with the engine's cooling system, so we check both when needed.",
+          question: "My heat isn't working, could that be related to my cooling system?",
+          answer: "It can be, the heating system shares components with the engine's cooling system, so we check both when needed.",
         },
         {
           question: "Do you service both AC and heating?",
@@ -617,11 +617,11 @@ export const business = {
         "A failing starter or charging system tends to get worse gradually until the vehicle won't start at all, often at an inconvenient time. Testing the actual cause early helps you avoid being stranded.",
       faqs: [
         {
-          question: "My car won't start — is that always the battery?",
+          question: "My car won't start, is that always the battery?",
           answer: "Not always. A clicking sound or slow cranking can point to the starter or charging system rather than the battery itself. We test each component to confirm.",
         },
         {
-          question: "My battery keeps dying even after I replaced it — what's going on?",
+          question: "My battery keeps dying even after I replaced it, what's going on?",
           answer: "That's a common sign of a charging system issue, such as a failing alternator, rather than the battery. We test the full system to find the cause.",
         },
         {
@@ -638,7 +638,7 @@ export const business = {
       shortDescription: "Full-service mechanical auto repair and preventive maintenance for everyday cars, trucks, and SUVs.",
       intro: [
         "Not sure exactly what's wrong, or need something that doesn't fit neatly into one category? We handle general mechanical repair and maintenance across your vehicle's major systems.",
-        "We focus on mechanical repair — see our full services list for specifics.",
+        "We focus on mechanical repair, see our full services list for specifics.",
       ],
       included: [
         "Multi-point vehicle inspection",
@@ -658,7 +658,7 @@ export const business = {
       faqs: [
         {
           question: "What if I don't know what's wrong with my vehicle?",
-          answer: "That's alright — describe what you're noticing and we'll do a general inspection to help identify the cause.",
+          answer: "That's alright, describe what you're noticing and we'll do a general inspection to help identify the cause.",
         },
         {
           question: "Do you offer general inspections before a road trip?",

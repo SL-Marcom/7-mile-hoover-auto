@@ -13,7 +13,7 @@ export function ServiceCtaCard() {
     <div className="flex flex-col rounded-lg bg-[var(--color-primary)] p-5 text-white">
       <h3 className="text-lg font-extrabold leading-tight">Need Auto Repair in Detroit?</h3>
       <p className="mt-2 flex-1 text-sm leading-6 text-white/90">
-        Call now for a straight answer, or stop by the shop at 7 Mile and Hoover — we&rsquo;re ready to help.
+        Call now for a straight answer, or stop by the shop at 7 Mile and Hoover, we&rsquo;re ready to help.
       </p>
       <div className="mt-4 flex flex-col gap-2.5">
         <CTA href={business.phone.href} variant="accent" className="w-full">
