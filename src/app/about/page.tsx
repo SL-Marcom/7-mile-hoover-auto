@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { createMetadata } from "@/lib/seo/metadata";
 import { PageHero } from "@/components/sections/PageHero";
 import { LocationHours } from "@/components/sections/LocationHours";
@@ -62,16 +63,28 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-white py-14 sm:py-18">
-        <div className="mx-auto w-full max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--color-primary)]">Our Approach</p>
-          <h2 className="text-2xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-3xl">
-            Diagnosis Before Repair
-          </h2>
-          <p className="text-lg leading-7 text-[var(--color-muted)]">
-            Before recommending any work, we identify the actual cause of the issue and explain what we find in plain
-            language. Our goal is for you to understand what your vehicle needs and why, so you can make an informed
-            decision about the next step.
-          </p>
+        <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:items-center lg:px-8">
+          <div className="space-y-4">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--color-primary)]">Our Approach</p>
+            <h2 className="text-2xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-3xl">
+              Diagnosis Before Repair
+            </h2>
+            <p className="text-lg leading-7 text-[var(--color-muted)]">
+              Before recommending any work, we identify the actual cause of the issue and explain what we find in
+              plain language. Our goal is for you to understand what your vehicle needs and why, so you can make an
+              informed decision about the next step.
+            </p>
+          </div>
+
+          <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:min-h-[320px]">
+            <Image
+              src="/images/about-storefront.jpg"
+              alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 

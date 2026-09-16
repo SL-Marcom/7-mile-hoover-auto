@@ -20,6 +20,8 @@ export const serviceImages: Record<string, string> = {
   "radiator-cooling-system-repair": "/images/blog/why-is-my-car-overheating.jpg",
   "ac-heating-repair": "/images/blog/ac-blowing-warm-air-causes.jpg",
   "starter-alternator-repair": "/images/blog/car-wont-start-battery-starter-or-alternator.jpg",
+  "car-painting": "/images/services/car-painting.jpg",
+  towing: "/images/services/towing.jpg",
 };
 
 export function getServiceImage(slug: string): string | undefined {

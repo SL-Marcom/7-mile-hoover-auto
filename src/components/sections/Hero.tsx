@@ -21,26 +21,37 @@ const TRUST_POINTS = [
 export function Hero() {
   return (
     <Section className="relative isolate flex min-h-[calc(100svh-69px)] items-start overflow-hidden bg-white lg:min-h-[calc(100svh-105px)] lg:items-center">
-      {/* Mobile/tablet: a dedicated portrait banner with the white text zone already built in, photo below. */}
+      {/* Mobile/tablet: a tighter crop centered on the tow truck and garage bays — the roof sign sits too high in
+          frame to ever clear the text gradient below, so this crop lets the truck emerge from the fade instead. */}
       <Image
-        src="/images/hero-shop-mobile.jpg"
-        alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
-        fill
-        priority
-        quality={90}
-        sizes="100vw"
-        className="object-cover object-top lg:hidden"
-      />
-
-      {/* Desktop: full shop photo, shown at its natural cover crop (no extra zoom) to keep it sharp. */}
-      <Image
-        src="/images/hero-shop-exterior.jpg"
+        src="/images/hero-storefront-mobile.jpg"
         alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
         fill
         priority
         quality={95}
         sizes="100vw"
-        className="hidden object-cover object-[58%_35%] lg:block"
+        className="object-cover object-[50%_50%] lg:hidden"
+      />
+
+      {/* Desktop: full storefront photo, shown at its natural cover crop (no extra zoom) to keep it sharp. */}
+      <Image
+        src="/images/hero-storefront.jpg"
+        alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
+        fill
+        priority
+        quality={95}
+        sizes="100vw"
+        className="hidden object-cover object-[55%_32%] lg:block"
+      />
+
+      {/* Mobile/tablet: top-to-bottom white fade so the text zone stays readable above the photo. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 lg:hidden"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.95) 26%, rgba(255,255,255,0.82) 40%, rgba(255,255,255,0.48) 50%, rgba(255,255,255,0.15) 62%, rgba(255,255,255,0) 72%)",
+        }}
       />
 
       {/* Desktop: smooth left-to-right fade — solid over the text, clear toward the photo on the right. */}
