@@ -18,6 +18,18 @@ export function Input({ className, ...props }: React.InputHTMLAttributes<HTMLInp
   );
 }
 
+export function Select({ className, ...props }: React.SelectHTMLAttributes<HTMLSelectElement>) {
+  return (
+    <select
+      className={cn(
+        "w-full rounded-md border border-[var(--color-border)] bg-white px-4 py-3 text-base text-[var(--color-ink)] shadow-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
 export function Textarea({ className, ...props }: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return (
     <textarea

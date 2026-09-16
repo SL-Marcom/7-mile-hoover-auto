@@ -17,11 +17,18 @@ export interface ContactSubmitResult {
  */
 export async function sendContactEmail(formData: FormData): Promise<ContactSubmitResult> {
   const name = String(formData.get("name") ?? "").trim();
+  const phone = String(formData.get("phone") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
+  const service = String(formData.get("service") ?? "").trim();
   const message = String(formData.get("message") ?? "").trim();
 
-  if (!name || !email || !message) {
-    return { success: false, error: "Please fill in your name, email, and a short message before sending." };
+  if (!name || !phone || !email || !message) {
+    return { success: false, error: "Please fill in your name, phone number, email, and a short message before sending." };
+  }
+
+  const phoneDigits = phone.replace(/\D/g, "");
+  if (phoneDigits.length < 7) {
+    return { success: false, error: "Please enter a valid phone number." };
   }
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,7 +58,9 @@ export async function sendContactEmail(formData: FormData): Promise<ContactSubmi
         `New quote request from the ${business.brandName.value} website.`,
         "",
         `Name: ${name}`,
+        `Phone: ${phone}`,
         `Email: ${email}`,
+        `Service: ${service || "Not specified"}`,
         "",
         "Message:",
         message,

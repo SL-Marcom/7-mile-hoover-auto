@@ -2,10 +2,13 @@
 
 import { useActionState } from "react";
 import { Button } from "@/components/ui/Button";
-import { Input, Label, Textarea } from "@/components/ui/Form";
+import { Input, Label, Select, Textarea } from "@/components/ui/Form";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { sendContactEmail, type ContactSubmitResult } from "@/lib/forms/sendContactEmail";
+import { business } from "@/content/business";
+
+const SERVICE_OPTIONS = [...business.services.map((service) => service.name), "Towing"];
 
 interface ContactProps {
   title: string;
@@ -34,12 +37,37 @@ export function Contact({ title, description }: ContactProps) {
           className="space-y-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7"
         >
           <div>
-            <Label htmlFor="contact-name">Name</Label>
+            <Label htmlFor="contact-name">Name*</Label>
             <Input id="contact-name" name="name" placeholder="Your name" autoComplete="name" required />
+          </div>
+          <div>
+            <Label htmlFor="contact-phone">Phone Number*</Label>
+            <Input
+              id="contact-phone"
+              name="phone"
+              type="tel"
+              placeholder="(313) 555-0100"
+              autoComplete="tel"
+              required
+            />
           </div>
           <div>
             <Label htmlFor="contact-email">Email</Label>
             <Input id="contact-email" name="email" type="email" placeholder="you@example.com" autoComplete="email" required />
+          </div>
+          <div>
+            <Label htmlFor="contact-service">Service Needed</Label>
+            <Select id="contact-service" name="service" defaultValue="">
+              <option value="" disabled>
+                Select a service
+              </option>
+              {SERVICE_OPTIONS.map((serviceName) => (
+                <option key={serviceName} value={serviceName}>
+                  {serviceName}
+                </option>
+              ))}
+              <option value="Not sure / Other">Not sure / Other</option>
+            </Select>
           </div>
           <div>
             <Label htmlFor="contact-message">What&rsquo;s going on with your vehicle?</Label>
