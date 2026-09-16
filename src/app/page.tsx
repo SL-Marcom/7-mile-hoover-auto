@@ -57,8 +57,8 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <TowingPromo />
-      <About />
       <Reviews />
+      <About />
       <LocationHours />
       <FAQ title="Common Questions" items={HOME_FAQ_ITEMS} viewAllHref="/faq" />
       <CTASection

@@ -90,12 +90,13 @@ export const business = {
     note: "Target domain for this build. DNS has not been connected and no deployment has occurred, used here only for canonical/OG/JSON-LD URLs.",
   },
 
-  /** Read directly from the Client Intake Engine (clients/7-mile-hoover-auto/intake/context.ts). This build never deploys, publishes to production, changes DNS, installs analytics, or connects an external service regardless of these values. */
+  /** Read directly from the Client Intake Engine (clients/7-mile-hoover-auto/intake/context.ts). This build never deploys, publishes to production, changes DNS, or connects an external service regardless of these values. */
   permissions: {
     publishingApproved: false,
     deploymentApproved: true,
     dnsChangesApproved: false,
-    analyticsInstallApproved: false,
+    /** Explicitly approved directly by the client with real GTM (GTM-53JCNCX8) and GA4 (G-WQBCMHS28E) IDs to install. */
+    analyticsInstallApproved: true,
     externalServiceConnectionsApproved: false,
   },
 
