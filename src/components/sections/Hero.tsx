@@ -21,16 +21,16 @@ const TRUST_POINTS = [
 export function Hero() {
   return (
     <Section className="relative isolate flex min-h-[calc(100svh-69px)] items-start overflow-hidden bg-white lg:min-h-[calc(100svh-105px)] lg:items-center">
-      {/* Mobile/tablet: a dedicated crop centered on the roof sign so it stays large and legible even on the
-          smallest phones — a lighter fade (below) lets it ghost through behind the text. */}
+      {/* Mobile/tablet: a dedicated portrait banner with the white text zone already composed into the photo,
+          fading into the shop exterior (both roof signs visible) below — no CSS overlay needed here. */}
       <Image
         src="/images/hero-storefront-mobile.jpg"
         alt={`${business.brandName.value} shop exterior at ${business.address.full}`}
         fill
         priority
-        quality={95}
+        quality={90}
         sizes="100vw"
-        className="object-cover object-[50%_35%] lg:hidden"
+        className="object-cover object-top lg:hidden"
       />
 
       {/* Desktop: full storefront photo, shown at its natural cover crop (no extra zoom) to keep it sharp. */}
@@ -42,16 +42,6 @@ export function Hero() {
         quality={95}
         sizes="100vw"
         className="hidden object-cover object-[55%_32%] lg:block"
-      />
-
-      {/* Mobile/tablet: top-to-bottom white fade, light enough for the sign to still ghost through. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 lg:hidden"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.65) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.15) 65%, rgba(255,255,255,0) 78%)",
-        }}
       />
 
       {/* Desktop: smooth left-to-right fade — solid over the text, clear toward the photo on the right. */}
