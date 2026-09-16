@@ -3,6 +3,7 @@ import { createMetadata } from "@/lib/seo/metadata";
 import { Hero } from "@/components/sections/Hero";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Services } from "@/components/sections/Services";
+import { TowingPromo } from "@/components/sections/TowingPromo";
 import { About } from "@/components/sections/About";
 import { LocationHours } from "@/components/sections/LocationHours";
 import { Reviews } from "@/components/sections/Reviews";
@@ -55,6 +56,7 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <Services />
+      <TowingPromo />
       <About />
       <Reviews />
       <LocationHours />

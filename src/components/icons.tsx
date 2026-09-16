@@ -266,5 +266,4 @@ export const SERVICE_ICONS: Record<string, (props: IconProps) => React.ReactElem
   battery: BatteryIcon,
   wrench: WrenchIcon,
   paint: PaintIcon,
-  towing: TowingIcon,
 };

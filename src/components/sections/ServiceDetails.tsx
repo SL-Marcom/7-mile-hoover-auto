@@ -1,9 +1,14 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CheckIcon } from "@/components/icons";
-import type { Service } from "@/content/business";
 
-export function ServiceDetails({ service }: { service: Service }) {
+interface ServiceDetailsContent {
+  name: string;
+  signs: readonly string[];
+  included: readonly string[];
+}
+
+export function ServiceDetails({ service }: { service: ServiceDetailsContent }) {
   return (
     <Section className="bg-[var(--color-surface)] py-14 sm:py-18">
       <Container className="grid gap-6 lg:grid-cols-2">

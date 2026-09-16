@@ -1,8 +1,12 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import type { Service } from "@/content/business";
 
-export function ServiceWhyTimely({ service }: { service: Service }) {
+interface ServiceWhyTimelyContent {
+  name: string;
+  whyTimelyMatters: string;
+}
+
+export function ServiceWhyTimely({ service }: { service: ServiceWhyTimelyContent }) {
   return (
     <Section className="bg-white py-14 sm:py-18">
       <Container className="max-w-3xl space-y-4">

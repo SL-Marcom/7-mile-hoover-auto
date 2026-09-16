@@ -4,7 +4,7 @@ import { blogPosts } from "@/content/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = business.siteUrl.value;
-  const staticRoutes = ["", "/about", "/services", "/faq", "/contact", "/blog", "/privacy-policy", "/terms-of-service"];
+  const staticRoutes = ["", "/about", "/services", "/towing", "/faq", "/contact", "/blog", "/privacy-policy", "/terms-of-service"];
   const serviceRoutes = business.services.map((service) => `/services/${service.slug}`);
   const blogRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
 
