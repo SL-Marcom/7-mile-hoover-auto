@@ -28,7 +28,7 @@ const FAQ_ITEMS = [
   {
     question: "Do you do collision repair, body work, or tire services?",
     answer:
-      "No. We focus on mechanical auto repair and maintenance and do not provide collision repair, auto body work, painting, or tire sales/replacement.",
+      "We offer auto painting in addition to mechanical repair, but we do not provide collision repair, auto body work, or tire sales/replacement.",
   },
   {
     question: "What if I'm not sure what's wrong with my vehicle?",

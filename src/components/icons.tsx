@@ -217,6 +217,31 @@ export function CloseIcon(props: IconProps) {
   return base(<path d="M5 5l14 14M19 5 5 19" />, props);
 }
 
+export function PaintIcon(props: IconProps) {
+  return base(
+    <>
+      <rect x="7" y="7" width="8" height="13" rx="1.5" />
+      <path d="M9 7V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2" />
+      <path d="M17 9l3-1.2M18.2 12H21M17 15l3 1.2" />
+    </>,
+    props,
+  );
+}
+
+export function TowingIcon(props: IconProps) {
+  return base(
+    <>
+      <path d="M7 3v6a4 4 0 0 0 4 4h2" />
+      <circle cx="7" cy="3" r="1.5" />
+      <path d="M13 11.5V15" />
+      <rect x="9.5" y="15" width="9" height="5" rx="1.5" />
+      <circle cx="12.5" cy="20" r="1.3" />
+      <circle cx="16" cy="20" r="1.3" />
+    </>,
+    props,
+  );
+}
+
 export function StarIcon(props: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={props.className} aria-hidden="true">
@@ -240,4 +265,6 @@ export const SERVICE_ICONS: Record<string, (props: IconProps) => React.ReactElem
   climate: ClimateIcon,
   battery: BatteryIcon,
   wrench: WrenchIcon,
+  paint: PaintIcon,
+  towing: TowingIcon,
 };

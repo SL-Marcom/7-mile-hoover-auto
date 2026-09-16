@@ -2,7 +2,6 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
 import { ServiceCard } from "@/components/sections/ServiceCard";
-import { ServiceCtaCard } from "@/components/sections/ServiceCtaCard";
 import { business } from "@/content/business";
 
 export function Services() {
@@ -23,7 +22,6 @@ export function Services() {
           {business.services.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
-          <ServiceCtaCard />
         </div>
 
         <div className="mt-8 flex justify-center sm:hidden">
@@ -33,7 +31,7 @@ export function Services() {
         </div>
 
         <p className="mt-10 max-w-3xl text-sm text-[var(--color-muted)]">
-          We focus on mechanical auto repair and maintenance. We do not perform collision repair, auto body work, painting, or tire sales/replacement.
+          We focus on mechanical auto repair and maintenance, plus auto painting. We do not perform collision repair, auto body work, or tire sales/replacement.
         </p>
       </Container>
     </Section>

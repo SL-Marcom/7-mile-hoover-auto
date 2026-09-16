@@ -82,7 +82,7 @@ export const business = {
   },
 
   /** What this shop does not do — never advertise or imply these anywhere on the site. */
-  exclusions: ["Collision repair", "Auto body work", "Auto painting", "Tire sales", "Tire replacement"],
+  exclusions: ["Collision repair", "Auto body work", "Tire sales", "Tire replacement"],
 
   siteUrl: {
     value: "https://7hautoservice.com",
@@ -670,6 +670,85 @@ export const business = {
         },
       ],
       relatedSlugs: ["oil-change-preventive-maintenance", "check-engine-light-diagnostics", "engine-repair"],
+    },
+    {
+      slug: "car-painting",
+      name: "Car Painting",
+      icon: "paint",
+      shortDescription: "Auto painting services, from spot and panel painting to a full repaint, with color matching.",
+      intro: [
+        "A worn, faded, or damaged paint finish affects more than looks, it can leave bare metal exposed to rust over time. We handle auto painting work to help restore and protect your vehicle's finish.",
+        "We work on everyday cars, trucks, and SUVs, matching color and finish as closely as possible to the rest of the vehicle.",
+      ],
+      included: [
+        "Full vehicle painting",
+        "Panel and spot painting",
+        "Color matching",
+        "Surface prep and sanding",
+        "Primer and clear coat application",
+      ],
+      signs: [
+        "Faded, chipped, or peeling paint",
+        "Scratches down to primer or bare metal",
+        "Rust starting to form on a damaged paint area",
+        "Mismatched paint from a previous repair",
+        "You want to refresh the vehicle's overall appearance",
+      ],
+      whyTimelyMatters:
+        "Once paint is chipped or scratched through to bare metal, the exposed area is vulnerable to rust, and rust tends to spread the longer it's left untreated. Addressing damaged paint early helps protect the panel underneath, not just the appearance.",
+      faqs: [
+        {
+          question: "Can you match my car's exact paint color?",
+          answer: "We do our best to match your vehicle's existing color and finish as closely as possible for a consistent look.",
+        },
+        {
+          question: "Do you paint the whole car or just certain panels?",
+          answer: "Both, depending on what you need, from a single panel or spot repair to a full vehicle repaint.",
+        },
+        {
+          question: "Will painting over a scratch stop it from rusting?",
+          answer: "Properly prepping and painting over an exposed area helps protect it from rust going forward, which is why it's worth addressing sooner rather than later.",
+        },
+      ],
+      relatedSlugs: ["general-auto-repair", "suspension-repair", "auto-electrical-repair"],
+    },
+    {
+      slug: "towing",
+      name: "Towing",
+      icon: "towing",
+      shortDescription: "In-house towing to get your vehicle safely to our shop when it can't be driven in.",
+      intro: [
+        "When your vehicle can't be driven safely, whether it won't start, broke down, or was in an accident, we offer towing to bring it to our shop for repair.",
+        "Towing is handled in-house with our own truck, so you're working directly with us from pickup through repair.",
+      ],
+      included: [
+        "Vehicle pickup and tow to our shop",
+        "Towing for cars, trucks, and SUVs",
+        "Coordination with your repair once the vehicle arrives",
+      ],
+      signs: [
+        "Your vehicle won't start and needs to be brought in",
+        "Your car broke down and isn't safe to drive",
+        "You were in an accident and need your vehicle moved",
+        "A warning light or noise means you shouldn't keep driving",
+      ],
+      whyTimelyMatters:
+        "Driving a vehicle that isn't safe to operate can turn a manageable repair into a bigger one, or put you at risk on the road. Towing it in as soon as you notice a serious problem helps prevent further damage.",
+      faqs: [
+        {
+          question: "Do you tow vehicles yourselves or use a third party?",
+          answer: "We tow in-house with our own truck, so you're working directly with us from pickup through repair.",
+        },
+        {
+          question: "What areas do you tow from?",
+          answer: "We tow within Detroit, MI and nearby communities. Call us to confirm we can reach your location.",
+        },
+        {
+          question: "Is towing available outside your regular shop hours?",
+          answer: "Towing follows our regular shop hours. Call us to check availability for your situation.",
+        },
+      ],
+      relatedSlugs: ["general-auto-repair", "starter-alternator-repair", "check-engine-light-diagnostics"],
     },
   ],
 } as const;
